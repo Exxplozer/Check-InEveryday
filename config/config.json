@@ -14,7 +14,17 @@
     "secrets":{
       "clientId" : "G23XNOIAEZF5DRXKVFB5XZJIKF154FOHGIZ2UUWOHM5YITYU",
       "clientSecret" : "LCBH2KT1JF0XOA1UACNOJNFJ2VZO04VXEOAPOJZQQBBTZOCP",
-      "redirectUrl" : "https://m.vk.com/"
+      "redirectUrl" : "http://localhost:3000/callback"
+    }
+  },
+  "session":{
+    "secret" : "4b1b880cf964a520dffb23e3",
+    "name" : "West Kowloon Waterfront Promenade",
+    "key" : "sid",
+    "cookie":{
+      "path": "/",
+      "httpOnly": true,
+      "maxAge" : null
     }
   }
 }
