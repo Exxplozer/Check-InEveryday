@@ -4,6 +4,8 @@ var checkin = mongoose.Schema({
     venueId : String,
     token: String,
     ll: String,
-    checkinDate : Date
+    checkinDate : Date,
+    count: Number
 });
+
 exports.Checkin = mongoose.model('checkin', checkin);

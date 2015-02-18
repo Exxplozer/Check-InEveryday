@@ -11,8 +11,8 @@ exports.login = function(req, res) {
 exports.callback = function(req, res){
     foursquare.getAccessToken({
         code: req.query.code
-    }, function (error, accessToken) {
-        if(error) {
+    }, function (err, accessToken) {
+        if(err) {
             res.send('An error was thrown: ' + error.message);
         }
         else {

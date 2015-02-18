@@ -5,13 +5,13 @@ var Category = require('./category').Category;
 
 
 var schema = new Schema({
-    id :{type : String},
-    name :{type : String},
-    image:{type : String},
-    raitingColor:{type : String},
-    raiting :{type : Number},
-    location :{type : Location},
-    categories :{type : Category}
+    id :String,
+    name : String,
+    image: String,
+    raitingColor: String,
+    raiting : Number,
+    location :Location,
+    categories :Category
 });
 
 exports.Venue = mongoose.model('Venue', schema);
