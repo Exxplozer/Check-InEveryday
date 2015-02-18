@@ -1,1 +1,1 @@
-# Checki-nEveryday
+# Check-inEveryday
