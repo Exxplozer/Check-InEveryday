@@ -8,7 +8,7 @@ exports.get = function(req,res,next){
     l2 = req.params.ll.split(',')[1];
 
     foursquare.Venues.explore(l1,l2, null, {}, req.params.token,function (error, data) {
-        if (error) return next(error.statusCode);
+        if (error) return next(error);
         res.json(data);
     });
 };
@@ -22,7 +22,7 @@ exports.getltq = function(req,res,next){
 
     foursquare.Venues.explore(l1,l2, null,
         {query : req.params.query}, req.params.token, function (error, data) {
-            if (error) return next(error.statusCode);
+            if (error) return next(error);
             res.json(data);
         });
 };

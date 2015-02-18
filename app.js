@@ -45,7 +45,7 @@ app.use(function (err, req ,res, next) {
         res.sendHttpError(err);
     } else {
         console.log(err);
-        err = new httpError(err.statusCode);
+        err = new httpError(err);
         res.sendHttpError(err);
     }
 });
