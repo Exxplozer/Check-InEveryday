@@ -30,12 +30,69 @@ block content
                 a(href="/login")
                     img(src="https://ss1.4sqi.net/img/connectTo-990dd166e85a12426a6f57634875256c.png")
     br
-    h2 Get checkins
+    <!-----------------------PUBLIC API----------------------------------------->
+    h1 Public API
+    p Thease api methos the same for general and mobile apis
+    h3 Checkin in foursquare
+    p This method the add checkin in foursquare by venueId
+    div(class="input-group")
+        div(class="input-group-addon") Venue Id:
+        input(text value= venueId id="venueId" class="form-control")
+    br
+    div(class="input-group")
+        div(class="input-group-addon") ll:
+        input(text value= ll id="ll3" class="form-control")
+    br
+    div(class="row")
+        div(class="col-xs-6")
+            div(class="input-group")
+                div(class="input-group-addon") Days:
+                select(class="form-control" id="days")
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+                    option 6
+                    option 7
+        div(class="col-xs-6")
+            div(class="input-group")
+                div(class="input-group-addon") Hours:
+                select(class="form-control" id="hours")
+                    option 3
+                    option 4
+                    option 5
+                    option 6
+                    option 7
+                    option 8
+                    option 9
+                    option 10
+                    option 11
+                    option 12
+                    option 13
+                    option 14
+                    option 15
+                    option 16
+                    option 17
+                    option 18
+                    option 19
+                    option 20
+                    option 21
+                    option 22
+                    option 23
+                    option 24
+        br
+        br
+    button(type="submin" class="btn btn-success" onclick="JSONTest()") Post
+    <!-----------------------GENERAL API----------------------------------------->
+    h1 General api
+    p These api methods the geta lot of data and not recommending for use in your mobile apps
+    h3 Get checkins
     div(class="form-group")
         p This method getting checkins of user by OAuth token
             div(class="input-group")
                 button(type="submin" class="btn btn-success" onclick="location.href='/api/checkins/'+document.getElementById('token').value") Get
-        h2 Get venue by string
+        h3 Get venue by string
         p This method getting venues near the ll by string
         div(class="input-group")
             div(class="input-group-addon") ll:
@@ -46,61 +103,37 @@ block content
             input(text value= query id="query1" class="form-control")
         br
         button(type="submin" class="btn btn-success" onclick="location.href='/api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value+'/'+document.getElementById('query1').value") Get
-        h2 Get venue
+        h3 Get venue
         p This method getting venues near ll
         div(class="input-group")
             div(class="input-group-addon") ll:
             input(text value= ll id="ll2" class="form-control")
         br
         button(type="submin" class="btn btn-success" onclick="location.href='/api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value") Get
-        h2 Checkin in foursquare
-        p This method the add checkin in foursquare by venueId
-        div(class="input-group")
-            div(class="input-group-addon") Venue Id:
-            input(text value= venueId id="venueId" class="form-control")
-        br
-        div(class="input-group")
-            div(class="input-group-addon") ll:
-            input(text value= ll id="ll3" class="form-control")
-        br
-        div(class="row")
-            div(class="col-xs-6")
+        h1 Mobile api
+        p These api methods the get not many data and recommendin gor using in mobile apps
+
+        <!-----------------------MOBILE API----------------------------------------->
+        h3 Get checkins
+        div(class="form-group")
+            p This method getting checkins of user by OAuth token
                 div(class="input-group")
-                    div(class="input-group-addon") Days:
-                    select(class="form-control" id="days")
-                     option 1
-                     option 2
-                     option 3
-                     option 4
-                     option 5
-                     option 6
-                     option 7
-            div(class="col-xs-6")
-                div(class="input-group")
-                    div(class="input-group-addon") Hours:
-                    select(class="form-control" id="hours")
-                        option 3
-                        option 4
-                        option 5
-                        option 6
-                        option 7
-                        option 8
-                        option 9
-                        option 10
-                        option 11
-                        option 12
-                        option 13
-                        option 14
-                        option 15
-                        option 16
-                        option 17
-                        option 18
-                        option 19
-                        option 20
-                        option 21
-                        option 22
-                        option 23
-                        option 24
+                    button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/checkins/'+document.getElementById('token').value") Get
+            h3 Get venue by string
+            p This method getting venues near the ll by string
+            div(class="input-group")
+                div(class="input-group-addon") ll:
+                input(text value= ll id="ll" class="form-control")
             br
+            div(class="input-group")
+                div(class="input-group-addon") String:
+                input(text value= query id="query1" class="form-control")
             br
-        button(type="submin" class="btn btn-success" onclick="JSONTest()") Post
+            button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value+'/'+document.getElementById('query1').value") Get
+            h3 Get venue
+            p This method getting venues near ll
+            div(class="input-group")
+                div(class="input-group-addon") ll:
+                input(text value= ll id="ll2" class="form-control")
+            br
+            button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value") Get

@@ -1,26 +1,33 @@
 module.exports = function(app) {
 
+    /* public */
     app.get('/', function(req, res, next){
         var accessToken = req.session.token;
         res.render('index', {
             token: accessToken,
             ll : '40.7033127,-73.979681',
-            query: 'Building',
+            query: 'Empire',
             venueId: '49c2df9cf964a5203b561fe3'
         });
     });
 
-    app.get('/login', require('./oauth').login);
+    app.get('/login', require('./public/oauth').login);
 
-    app.get('/callback', require('./oauth').callback);
+    app.get('/callback', require('./public/oauth').callback);
 
-   // app.post('/api/checkin/add', require('./checkin').post);
+    app.post('/checkin/add', require('./public/checkin').addCheckins);
 
-    app.post('/api/checkins/add', require('./checkin').addCheckins); /* Test function*/
+    /* api */
+    app.get('/api/checkins/:token', require('./api/checkin').get);
 
-    app.get('/api/checkins/:token', require('./checkin').get);
+    app.get('/api/venues/:ll/:token/:query', require('./api/venue').getltq);
 
-    app.get('/api/venues/:ll/:token/:query', require('./venue').getltq);
+    app.get('/api/venues/:ll/:token/', require('./api/venue').get);
 
-    app.get('/api/venues/:ll/:token/', require('./venue').get);
+    /* mobile api */
+    app.get('/mobile-api/checkins/:token', require('./mobile.api/checkin').get);
+
+    app.get('/mobile-api/venues/:ll/:token/:query', require('./mobile.api/venue').getltq);
+
+    app.get('/mobile-api/venues/:ll/:token', require('./mobile.api/venue').get);
 };
