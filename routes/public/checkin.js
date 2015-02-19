@@ -12,7 +12,6 @@ var date = new Date();
         interval : req.body.hours,
         count:  countOfCheckins
     }).save(function (err) {
-         console.log(date);
             if(err) return next(err.statusCode);
             res.end();
     });
