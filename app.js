@@ -1,12 +1,13 @@
 var express = require('express');
 var path = require('path');
-var mongoose = require('./lib/mongoose').db;
+var mongoose = require('./lib/mongoose');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var httpError = require('./error').HttpError;
 var config = require('./config');
 var foursquare = require('node-foursquare')(config.get('foursquare'));
+var dateFormat = require('dateformat');
 var app = express();
 
 module.exports = app;
@@ -27,7 +28,7 @@ app.use(session({
     name: config.get('session:name'),
     key :config.get('session:key'),
     cookie: config.get('session:cookie'),
-    store: new MongoStore({mongooseConnection: mongoose.connection}),
+    store: new MongoStore({mongooseConnection: mongoose.db.connection}),
     proxy: true,
     resave: true,
     saveUninitialized: true
@@ -49,3 +50,6 @@ app.use(function (err, req ,res, next) {
         res.sendHttpError(err);
     }
 });
+setInterval( function(){
+    mongoose.FindCurrentCheckin();
+},500);

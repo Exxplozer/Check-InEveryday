@@ -15,7 +15,7 @@ module.exports = function(app) {
 
     app.get('/callback', require('./public/oauth').callback);
 
-    app.post('/checkin/add', require('./public/checkin').addCheckins);
+    app.post('/checkin/add', require('./public/checkin').addCheckin);
 
     /* api */
     app.get('/api/checkins/:token', require('./api/checkin').get);
