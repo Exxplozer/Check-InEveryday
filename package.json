@@ -17,7 +17,7 @@
     "connect-mongo": "*",
     "cookies" :"*",
     "express-session" : "*",
-    "mongoose" : "3.8.23 ",
+    "mongoose" : "3.8.8",
     "nconf" : "*",
     "node-foursquare" : "*",
     "oauth" : "*",
