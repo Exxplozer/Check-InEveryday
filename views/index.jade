@@ -8,7 +8,7 @@ block content
             var day = document.getElementById("days").value;
             var hour = document.getElementById("hours").value;
             $.ajax({
-                url: "http://localhost:3000/checkin/add",
+                url: "checkineveryday.herokuapp.com/checkin/add",
                 type: "POST",
                 data: {ll: ll, venueId: venueId, oauth_token: oauth_token, days: day, hours: hour},
                 dataType: "json",
