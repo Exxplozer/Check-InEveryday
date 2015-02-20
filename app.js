@@ -7,7 +7,6 @@ var session = require('express-session');
 var httpError = require('./error').HttpError;
 var config = require('./config');
 var foursquare = require('node-foursquare')(config.get('foursquare'));
-var dateFormat = require('dateformat');
 var app = express();
 
 module.exports = app;

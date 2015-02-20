@@ -3,6 +3,7 @@ module.exports = function(app) {
     /* public */
     app.get('/', function(req, res, next){
         var accessToken = req.session.token;
+        console.error(accessToken);
         res.render('index', {
             token: accessToken,
             ll : '40.7033127,-73.979681',
