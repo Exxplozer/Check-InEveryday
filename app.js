@@ -4,7 +4,7 @@ var mongoose = require('./lib/mongoose');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
-var httpError = require('./error').HttpError;
+var HttpError = require('./error').HttpError;
 var config = require('./config');
 var foursquare = require('node-foursquare')(config.get('foursquare'));
 var app = express();
@@ -34,21 +34,20 @@ app.use(session({
 
 require('./routes')(app);
 
-app.use(function (err, req ,res, next) {
-    if(typeof  err == 'number'){
-        err = new httpError(err);
+app.use(function (err, req, res) {
+    if (typeof err === 'number') {
+        err = new HttpError(err);
     }
-    
-    if(err instanceof httpError){
+    if (err instanceof HttpError) {
         console.log(err);
         res.sendHttpError(err);
     } else {
         console.log(err);
-        err = new httpError(err);
+        err = new HttpError(err);
         res.sendHttpError(err);
     }
 });
 
-setInterval( function(){
+setInterval(function () {
     mongoose.FindCurrentCheckin();
 }, 500);

@@ -1,7 +1,7 @@
-module.exports = function(app) {
+module.exports = function (app) {
 
     /* public */
-    app.get('/', function(req, res){
+    app.get('/', function (req, res) {
         var accessToken = req.session.token;
         res.render('index', {
             token : accessToken,

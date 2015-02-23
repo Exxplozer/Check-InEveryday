@@ -1,4 +1,4 @@
-var checkin = require('../../models/currentCheckin').Checkin;
+var Сheckin = require('../../models/currentCheckin').Checkin;
 
 exports.addCheckin = function (req, res, next) {
     var countOfCheckins =
@@ -6,7 +6,7 @@ exports.addCheckin = function (req, res, next) {
 
     var date = new Date();
 
- new checkin({
+ new Сheckin({
         venueId : req.body.venueId,
         token : req.body.oauth_token,
         ll : req.body.ll,
@@ -14,7 +14,9 @@ exports.addCheckin = function (req, res, next) {
         interval : req.body.hours,
         count :  countOfCheckins
     }).save(function (err) {
-            if(err) return next(err.statusCode);
+            if (err) {
+                return next(err.statusCode);
+            }
             res.end();
     });
 };
