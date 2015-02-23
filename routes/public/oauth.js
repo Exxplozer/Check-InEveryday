@@ -1,6 +1,5 @@
 var config = require('../../config/index');
 var foursquare = require('node-foursquare')(config.get('foursquare'));
-var http = require('http');
 var savedAccessToken;
 
 exports.login = function(req, res) {
