@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="Update">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api/venue.js" afterPath="$PROJECT_DIR$/routes/api/venue.js" />
+    <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/mobile.api/venue.js" afterPath="$PROJECT_DIR$/routes/mobile.api/venue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -41,8 +40,8 @@
       <file leaf-file-name="venue.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/mobile.api/venue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8019802" vertical-offset="0" max-vertical-offset="756">
-              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.26732674" vertical-offset="0" max-vertical-offset="756">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -603,7 +602,13 @@
       <option name="project" value="LOCAL" />
       <updated>1424685987244</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Update">
+      <created>1424686481153</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1424686481153</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1034,8 +1039,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/mobile.api/venue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8019802" vertical-offset="0" max-vertical-offset="756">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.26732674" vertical-offset="0" max-vertical-offset="756">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>
