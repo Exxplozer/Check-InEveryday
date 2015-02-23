@@ -7,11 +7,12 @@ exports.login = function (req, res) {
 };
 
 exports.callback = function(req, res) {
+    console.log("i'm here");
     foursquare.getAccessToken({
         code: req.query.code
     }, function (err, accessToken) {
         if (err) {
-            res.send('An error was thrown: ' + error.message);
+            res.send('An error was thrown: ' + err.message);
         } else {
             console.log("get valid access token : " + accessToken);
             req.session.token = accessToken;

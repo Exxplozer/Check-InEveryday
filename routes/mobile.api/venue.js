@@ -4,10 +4,8 @@ var dateFormat = require('dateformat');
 var converter = require('../../lib/converter');
 
 exports.get = function (req, res, next) {
-
-    var now = new Date();
-
-    var  ll = req.params.ll.split(',');
+    var now = new Date(),
+        ll = req.params.ll.split(',');
 
     foursquare.Venues.explore(ll[0], ll[1], null, { venuePhotos : 1, v : dateFormat(now, "yyyymmdd")},
         req.params.token,
@@ -20,10 +18,8 @@ exports.get = function (req, res, next) {
 };
 
 exports.getByString = function (req, res, next) {
-
-    var now = new Date();
-
-    var  ll = req.params.ll.split(',');
+    var now = new Date(),
+        ll = req.params.ll.split(',');
 
     foursquare.Venues.explore(ll[0], ll[1], null, { query : req.params.query, venuePhotos : 1, v : dateFormat(now, "yyyymmdd")},
         req.params.token,
