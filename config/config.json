@@ -1,7 +1,7 @@
 {
   "port": 3000,
   "mongoose":{
-    "uri": "mongodb://connection",
+    "uri": "mongodb://windowsstoreapp:checkineveryday2015@ds062807.mongolab.com:62807/checkinsmongdb",
     "options":{
       "server":{
         "socketOptions":{
@@ -12,14 +12,14 @@
   },
   "foursquare":{
     "secrets":{
-      "clientId" : "clientId",
-      "clientSecret" : "clientSecret",
-      "redirectUrl" : "callback"
+      "clientId" : "G23XNOIAEZF5DRXKVFB5XZJIKF154FOHGIZ2UUWOHM5YITYU",
+      "clientSecret" : "LCBH2KT1JF0XOA1UACNOJNFJ2VZO04VXEOAPOJZQQBBTZOCP",
+      "redirectUrl" : "checkineveryday.herokuapp.com/callback"
     }
   },
   "session":{
-    "secret" : "secret",
-    "name" : "name",
+    "secret" : "4b1b880cf964a520dffb23e3",
+    "name" : "West Kowloon Waterfront Promenade",
     "key" : "sid",
     "cookie":{
       "path": "/",
