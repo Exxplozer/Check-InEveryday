@@ -19,9 +19,8 @@ app.use(bodyParser.urlencoded({ extended : false }));
 app.use(require('./middleware/sendHttpError'));
 app.use(cookieParser());
 
-
-
 var MongoStore = require('connect-mongo')(session);
+
 app.use(session({
     secret : config.get('session:secret'),
     name : config.get('session:name'),
@@ -49,6 +48,7 @@ app.use(function (err, req ,res, next) {
         res.sendHttpError(err);
     }
 });
+
 setInterval( function(){
     mongoose.FindCurrentCheckin();
-},500);
+}, 500);

@@ -7,6 +7,7 @@ exports.get = function(req,res,next){
 
     var now = new Date();
     var  l1, l2;
+
     l1 = req.params.ll.split(',')[0];
     l2 = req.params.ll.split(',')[1];
 
@@ -24,8 +25,10 @@ exports.getByString = function(req,res,next){
 
     var now = new Date();
     var  l1, l2;
+
     l1 = req.params.ll.split(',')[0];
     l2 = req.params.ll.split(',')[1];
+
     foursquare.Venues.explore(l1,l2, null,{
             query : req.params.query,
             venuePhotos : 1,

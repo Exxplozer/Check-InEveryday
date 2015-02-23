@@ -3,5 +3,6 @@ module.exports = function(req, res, next) {
         res.status(error.status);
         res.json(error);
     };
+
     next();
 };
