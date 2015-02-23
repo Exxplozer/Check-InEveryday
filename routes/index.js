@@ -4,10 +4,10 @@ module.exports = function(app) {
     app.get('/', function(req, res){
         var accessToken = req.session.token;
         res.render('index', {
-            token: accessToken,
+            token : accessToken,
             ll : '40.7033127,-73.979681',
-            query: 'Empire',
-            venueId: '49c2df9cf964a5203b561fe3'
+            query : 'Empire',
+            venueId : '49c2df9cf964a5203b561fe3'
         });
     });
 

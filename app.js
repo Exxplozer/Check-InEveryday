@@ -15,7 +15,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended : false }));
 app.use(require('./middleware/sendHttpError'));
 app.use(cookieParser());
 
@@ -23,14 +23,14 @@ app.use(cookieParser());
 
 var MongoStore = require('connect-mongo')(session);
 app.use(session({
-    secret: config.get('session:secret'),
-    name: config.get('session:name'),
-    key :config.get('session:key'),
-    cookie: config.get('session:cookie'),
-    store: new MongoStore({mongooseConnection: mongoose.db.connection}),
-    proxy: true,
-    resave: true,
-    saveUninitialized: true
+    secret : config.get('session:secret'),
+    name : config.get('session:name'),
+    key : config.get('session:key'),
+    cookie : config.get('session:cookie'),
+    store : new MongoStore({mongooseConnection : mongoose.db.connection}),
+    proxy : true,
+    resave : true,
+    saveUninitialized : true
 }));
 
 require('./routes')(app);

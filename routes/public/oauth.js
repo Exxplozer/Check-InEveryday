@@ -3,7 +3,7 @@ var foursquare = require('node-foursquare')(config.get('foursquare'));
 var savedAccessToken;
 
 exports.login = function(req, res) {
-    res.writeHead(303, { 'location': foursquare.getAuthClientRedirectUrl() });
+    res.writeHead(303, { 'location' : foursquare.getAuthClientRedirectUrl() });
     res.end();
 };
 
