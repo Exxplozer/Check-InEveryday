@@ -1,4 +1,4 @@
-var checkin= require('../../models/currentCheckin').Checkin;
+var checkin = require('../../models/currentCheckin').Checkin;
 
 exports.addCheckin = function (req, res, next) {
     var countOfCheckins =

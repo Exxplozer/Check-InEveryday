@@ -20,7 +20,7 @@ exports.get = function(req,res,next){
         });
 };
 
-exports.getltq = function(req,res,next){
+exports.getByString = function(req,res,next){
 
     var now = new Date();
     var  l1, l2;
