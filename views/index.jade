@@ -19,10 +19,9 @@ block content
             });
         };
     h1 Check-in Everyday Test Server
-
         - var t = {value : token}
         #t
-        if  t.value
+        if  !t.value
             div(class="input-group")
                 div(class="input-group-addon") Token:
                 input(text value= token id="token" disabled class="form-control")
@@ -119,7 +118,7 @@ block content
                     p This method getting venues near the coordinats by keyword
                     div(class="input-group")
                         div(class="input-group-addon") coordinats:
-                        input(text value= ll id="ll" class="form-control")
+                        input(text value= ll id="ll5" class="form-control")
                     br
                     div(class="input-group")
                         div(class="input-group-addon") Keyword:
@@ -130,11 +129,11 @@ block content
                     p This method getting venues near coordinats
                     div(class="input-group")
                         div(class="input-group-addon") coordinats:
-                        input(text value= ll id="ll2" class="form-control")
+                        input(text value= ll id="ll4" class="form-control")
                     br
                     button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value") Get
-
         else
             h4 Please, generate a marker
             a(href="/login")
                 img(src="https://ss1.4sqi.net/img/connectTo-990dd166e85a12426a6f57634875256c.png")
+
