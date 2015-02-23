@@ -14,7 +14,7 @@
     "secrets":{
       "clientId" : "G23XNOIAEZF5DRXKVFB5XZJIKF154FOHGIZ2UUWOHM5YITYU",
       "clientSecret" : "LCBH2KT1JF0XOA1UACNOJNFJ2VZO04VXEOAPOJZQQBBTZOCP",
-      "redirectUrl" : "http://checkineveryday.herokuapp.com/callback"
+      "redirectUrl" : "http://localhost:3000/callback"
     }
   },
   "session":{

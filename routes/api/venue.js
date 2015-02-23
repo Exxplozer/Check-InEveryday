@@ -3,7 +3,7 @@ var foursquare = require('node-foursquare')(config.get('foursquare'));
 var dateFormat = require('dateformat');
 
 
-exports.get = function(req,res,next){
+exports.get = function(req,res){
 
     var now = new Date();
     var  l1, l2;
@@ -15,8 +15,8 @@ exports.get = function(req,res,next){
             v :dateFormat(now, "yyyymmdd")},
             req.params.token,
             function (error, data) {
-        if (error) return next(error);
-        res.json(data);
+            if (error) return next(error);
+            res.json(data);
     });
 };
 
