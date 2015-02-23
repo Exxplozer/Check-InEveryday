@@ -6,12 +6,10 @@ var dateFormat = require('dateformat');
 exports.get = function(req,res){
 
     var now = new Date();
-    var  l1, l2;
 
-    l1 = req.params.ll.split(',')[0];
-    l2 = req.params.ll.split(',')[1];
+   var ll = req.params.ll.split(',');
 
-    foursquare.Venues.explore(l1,l2, null, {
+    foursquare.Venues.explore(ll[0], ll[1], null, {
             venuePhotos : 1,
             v :dateFormat(now, "yyyymmdd")},
             req.params.token,
@@ -24,12 +22,10 @@ exports.get = function(req,res){
 exports.getByString = function(req,res,next){
 
     var now = new Date();
-    var  l1, l2;
 
-    l1 = req.params.ll.split(',')[0];
-    l2 = req.params.ll.split(',')[1];
+  var  ll = req.params.ll.split(',');
 
-    foursquare.Venues.explore(l1,l2, null,{
+    foursquare.Venues.explore(ll[0], ll[1], null,{
             query : req.params.query,
             venuePhotos:1,
             v : dateFormat(now, "yyyymmdd")},
