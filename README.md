@@ -1,2 +1,2 @@
 # Check-inEveryday
-Demo checkineveryday.herokuapp.com
+Demo  https://checkineveryday.herokuapp.com/
