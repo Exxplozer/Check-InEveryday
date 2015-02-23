@@ -11,7 +11,8 @@ exports.get = function(req,res){
 
     foursquare.Venues.explore(ll[0], ll[1], null, {
             venuePhotos : 1,
-            v :dateFormat(now, "yyyymmdd")},
+            v :dateFormat(now, "yyyymmdd")
+            },
             req.params.token,
             function (error, data) {
             if (error) return next(error);
@@ -25,10 +26,11 @@ exports.getByString = function(req,res,next){
 
     var  ll = req.params.ll.split(',');
 
-    foursquare.Venues.explore(ll[0], ll[1], null,{
+    foursquare.Venues.explore(ll[0], ll[1], null, {
             query : req.params.query,
             venuePhotos:1,
-            v : dateFormat(now, "yyyymmdd")},
+            v : dateFormat(now, "yyyymmdd")
+            },
             req.params.token,
             function (error, data) {
             if (error) return next(error);
