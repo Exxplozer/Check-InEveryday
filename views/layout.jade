@@ -2,6 +2,7 @@ doctype html
 html
     head
         title=  "Check-in Everyday"
+        script(type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js")
         script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true")
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
     body
@@ -13,21 +14,30 @@ html
                 };
                 var map = new google.maps.Map(document.getElementById('map-canvas'),
                         mapOptions);
+                var marker;
             google.maps.event.addListener(map, 'click', function (e) {
-                document.getElementById("ll2").value = e.latLng.lat() + "," + e.latLng.lng();
-                document.getElementById("ll").value = e.latLng.lat() + "," + e.latLng.lng();
-                document.getElementById("ll3").value = e.latLng.lat() + "," + e.latLng.lng();
-                document.getElementById("ll4").value = e.latLng.lat() + "," + e.latLng.lng();
-                document.getElementById("ll5").value = e.latLng.lat() + "," + e.latLng.lng();
+                if(marker){
+                    marker.setMap(null);
+                }
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(e.latLng.lat(), e.latLng.lng()),
+                    animation: google.maps.Animation.DROP,
+                    map: map});
+                var lls = $('.ll');
+                for(var i = 0; i < lls.length;i++){
+                    lls[i].value = e.latLng.lat() + "," + e.latLng.lng();
+                }
             });
 
             }
             google.maps.event.addDomListener(window, 'load', initialize);
-        div(class="container")
-            div(class="col-md-6")
+        div(class="container" )
+            div(class="col-md-6" id="div1")
                 block content
-            div(class="col-md-6")
-                div(id = "map-canvas" style = "width: 300px; height: 300px")
+            div(class="col-md-6" id="div2")
+                div(style="position: fixed; top:120px;" id="map")
+                    div(id = "map-canvas" style = "width: 300px; height: 300px;")
+
 
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
     script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")

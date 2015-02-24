@@ -34,7 +34,7 @@ app.use(session({
 
 require('./routes')(app);
 
-app.use(function (err, req, res) {
+app.use(function (err, req, res, next) {
     if (typeof err === 'number') {
         err = new HttpError(err);
     }
@@ -42,7 +42,6 @@ app.use(function (err, req, res) {
         console.log(err);
         res.sendHttpError(err);
     } else {
-        console.log(err);
         err = new HttpError(err);
         res.sendHttpError(err);
     }
