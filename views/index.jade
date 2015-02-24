@@ -22,7 +22,7 @@ block content
     h1 Check-in Everyday Test Server
         - var t = {value : token}
         #t
-        if  !t.value
+        if  t.value
             div(class="input-group")
                 div(class="input-group-addon") Token:
                 input(text value= token id="token" disabled class="form-control")

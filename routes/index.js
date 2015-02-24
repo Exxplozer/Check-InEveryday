@@ -2,7 +2,7 @@ module.exports = function (app) {
 
     /* public */
     app.get('/', function (req, res) {
-        var accessToken = '';//req.session.token;
+        var accessToken = req.session.token;
         res.render('index', {
             token : accessToken,
             ll : '40.7033127,-73.979681',
