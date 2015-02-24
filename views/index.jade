@@ -37,7 +37,7 @@ block content
                 input(text value= venueId id="venueId" class="form-control" onclick="hide();" )
             br
             div(class="input-group")
-                div(class="input-group-addon") ll:
+                div(class="input-group-addon") Coordinates:
                 input(text value= ll id="ll" class="form-control ll" onclick="visible();")
             br
             div(class="row")
@@ -90,9 +90,9 @@ block content
                     div(class="input-group")
                         button(type="submin" class="btn btn-success" onclick="location.href='/api/checkins/'+document.getElementById('token').value") Get
                 h3 Get venue by string
-                p This method getting venues near these coordinats by keyword
+                p This method getting venues near these coordinates by keyword
                 div(class="input-group")
-                    div(class="input-group-addon") Coordinats:
+                    div(class="input-group-addon") Coordinates:
                     input(text value= ll id="ll" class="form-control ll" onclick="visible();")
                 br
                 div(class="input-group")
@@ -101,9 +101,9 @@ block content
                 br
                 button(type="submin" class="btn btn-success" onclick="location.href='/api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value+'/'+document.getElementById('query1').value") Get
                 h3 Get venue
-                p This method getting venues near coordinats
+                p This method getting venues near coordinates
                 div(class="input-group")
-                    div(class="input-group-addon") coordinats:
+                    div(class="input-group-addon") Coordinates:
                     input(text value= ll id="ll" class="form-control ll" onclick="visible();")
                 br
                 button(type="submin" class="btn btn-success" onclick="location.href='/api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value") Get
@@ -116,9 +116,9 @@ block content
                         div(class="input-group")
                             button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/checkins/'+document.getElementById('token').value") Get
                     h3 Get venue by string
-                    p This method getting venues near the coordinats by keyword
+                    p This method getting venues near the coordinates by keyword
                     div(class="input-group")
-                        div(class="input-group-addon") coordinats:
+                        div(class="input-group-addon") Coordinates:
                         input(text value= ll id="ll" class="form-control ll" onclick="visible();")
                     br
                     div(class="input-group")
@@ -127,9 +127,9 @@ block content
                     br
                     button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value+'/'+document.getElementById('query1').value") Get
                     h3 Get venue
-                    p This method getting venues near coordinats
+                    p This method getting venues near coordinates
                     div(class="input-group")
-                        div(class="input-group-addon") coordinats:
+                        div(class="input-group-addon") Coordinates:
                         input(text value= ll id="ll" class="form-control ll" onclick="visible();")
                     br
                     button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value") Get
