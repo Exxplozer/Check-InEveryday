@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="update map">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
+    <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Check-InEveryday.iws" />
@@ -728,7 +726,13 @@
       <option name="project" value="LOCAL" />
       <updated>1424782428833</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="update map">
+      <created>1424782963326</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1424782963326</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -804,7 +808,8 @@
     <MESSAGE value="new1" />
     <MESSAGE value="wow" />
     <MESSAGE value="add map" />
-    <option name="LAST_COMMIT_MESSAGE" value="add map" />
+    <MESSAGE value="update map" />
+    <option name="LAST_COMMIT_MESSAGE" value="update map" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
