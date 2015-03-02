@@ -22,7 +22,7 @@ block content
     h1 Check-in Everyday Test Server
         - var t = {value : token}
         #t
-        if  t.value
+        if  !t.value
             div(class="input-group")
                 div(class="input-group-addon") Token:
                 input(text value= token id="token" disabled class="form-control")
@@ -86,11 +86,11 @@ block content
             p These API methods to get a lot of data and not recommending for use in your mobile apps
             h3 Get checkins
             div(class="form-group")
-                p This method getting checkins of user by token
+                p This method returns checkins of user by token
                     div(class="input-group")
                         button(type="submin" class="btn btn-success" onclick="location.href='/api/checkins/'+document.getElementById('token').value") Get
                 h3 Get venue by string
-                p This method getting venues near these coordinates by keyword
+                p This method returns venues near these coordinates by keyword
                 div(class="input-group")
                     div(class="input-group-addon") Coordinates:
                     input(text value= ll id="ll" class="form-control ll" onclick="visible();")
@@ -101,22 +101,22 @@ block content
                 br
                 button(type="submin" class="btn btn-success" onclick="location.href='/api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value+'/'+document.getElementById('query1').value") Get
                 h3 Get venue
-                p This method getting venues near coordinates
+                p This method returns venues near coordinates
                 div(class="input-group")
                     div(class="input-group-addon") Coordinates:
                     input(text value= ll id="ll" class="form-control ll" onclick="visible();")
                 br
                 button(type="submin" class="btn btn-success" onclick="location.href='/api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value") Get
                 h1 Mobile API
-                p These methods getting not many data and recommending for using in mobile apps
+                p These methods returns not many data and recommending for using in mobile apps
                 <!-----------------------MOBILE API----------------------------------------->
                 h3 Get checkins
                 div(class="form-group")
-                    p This method getting checkins of user by token
+                    p This method returns checkins of user by token
                         div(class="input-group")
                             button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/checkins/'+document.getElementById('token').value") Get
                     h3 Get venue by string
-                    p This method getting venues near the coordinates by keyword
+                    p This method returns venues near the coordinates by keyword
                     div(class="input-group")
                         div(class="input-group-addon") Coordinates:
                         input(text value= ll id="ll" class="form-control ll" onclick="visible();")
@@ -127,7 +127,7 @@ block content
                     br
                     button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value+'/'+document.getElementById('query1').value") Get
                     h3 Get venue
-                    p This method getting venues near coordinates
+                    p This method returns venues near coordinates
                     div(class="input-group")
                         div(class="input-group-addon") Coordinates:
                         input(text value= ll id="ll" class="form-control ll" onclick="visible();")
