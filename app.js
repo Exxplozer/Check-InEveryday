@@ -29,6 +29,7 @@ app.use(session({
     store : new MongoStore({mongooseConnection : mongoose.db.connection}),
     proxy : true,
     resave : true,
+    macAge : 259200000,
     saveUninitialized : true
 }));
 
