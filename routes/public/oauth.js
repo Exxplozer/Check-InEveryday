@@ -6,8 +6,7 @@ exports.login = function (req, res) {
     res.end();
 };
 
-exports.callback = function(req, res) {
-    console.log("i'm here");
+exports.callback = function (req, res) {
     foursquare.getAccessToken({
         code: req.query.code
     }, function (err, accessToken) {

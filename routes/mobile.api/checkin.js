@@ -10,6 +10,7 @@ exports.get = function (req, res, next) {
         if (error) {
             return next(error);
         }
+
         res.json(converter.ConvertCheckins(data));
     });
 };

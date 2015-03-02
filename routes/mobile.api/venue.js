@@ -13,6 +13,7 @@ exports.get = function (req, res, next) {
             if (error) {
                 return next(error);
             }
+
             res.json(converter.ConvertVenues(data));
         });
 };
@@ -27,6 +28,7 @@ exports.getByString = function (req, res, next) {
             if (error) {
                 return next(error);
             }
+
             res.json(converter.ConvertVenues(data));
         });
 };
