@@ -18,7 +18,7 @@ block content
                 }
             });
         };
-
+    script(type='text/javascript').
         postRemoveHistory = function () {
             var oauth_token = document.getElementById("token").value;
             $.ajax({
@@ -37,6 +37,7 @@ block content
         - var t = {value : token}
         #t
         if  t.value
+            br
             div(class="input-group")
                 div(class="input-group-addon") Token:
                 input(text value= token id="token" disabled class="form-control")

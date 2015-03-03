@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/mobile.api/checkin.js" afterPath="$PROJECT_DIR$/routes/mobile.api/checkin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Check-InEveryday.iws" />
@@ -32,8 +30,8 @@
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8006644" vertical-offset="2128" max-vertical-offset="2730">
-              <caret line="174" column="17" selection-start-line="174" selection-start-column="17" selection-end-line="174" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.77242523" vertical-offset="105" max-vertical-offset="2745">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -181,8 +179,8 @@
         <option value="$PROJECT_DIR$/routes/public/checkin.js" />
         <option value="$PROJECT_DIR$/lib/converter.js" />
         <option value="$PROJECT_DIR$/routes/mobile.api/checkin.js" />
-        <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/index.jade" />
       </list>
     </option>
   </component>
@@ -708,7 +706,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425385803090</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="remove history">
+      <created>1425399305059</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1425399305059</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -792,7 +796,8 @@
     <MESSAGE value="index.jade" />
     <MESSAGE value="sessions maxAge" />
     <MESSAGE value="add history" />
-    <option name="LAST_COMMIT_MESSAGE" value="add history" />
+    <MESSAGE value="remove history" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove history" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1172,8 +1177,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8006644" vertical-offset="2128" max-vertical-offset="2730">
-          <caret line="174" column="17" selection-start-line="174" selection-start-column="17" selection-end-line="174" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.77242523" vertical-offset="105" max-vertical-offset="2745">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
           <folding />
         </state>
       </provider>
