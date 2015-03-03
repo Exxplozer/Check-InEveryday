@@ -2,7 +2,7 @@ var Сheckin = require('../../models/currentCheckin').Checkin;
 
 exports.addCheckin = function (req, res, next) {
     var countOfCheckins =
-        24 / req.body.hours * req.body.days;
+         24 / req.body.hours * req.body.days;
 
     var date = new Date();
 
