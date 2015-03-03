@@ -1,7 +1,7 @@
 extends layout
 block content
     script(type='text/javascript').
-        JSONTest = function () {
+        postCheckin = function () {
             var oauth_token = document.getElementById("token").value;
             var ll = document.getElementById("ll").value;
             var venueId = document.getElementById("venueId").value;
@@ -11,6 +11,20 @@ block content
                 url: "http://checkineveryday.herokuapp.com/checkin/add",
                 type: "POST",
                 data: {ll: ll, venueId: venueId, oauth_token: oauth_token, days: day, hours: hour},
+                dataType: "json",
+                success: function (result) {
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                }
+            });
+        };
+
+        postRemoveHistory = function () {
+            var oauth_token = document.getElementById("token").value;
+            $.ajax({
+                url: "http://checkineveryday.herokuapp.com/checkin/add",
+                type: "POST",
+                data: {token: oauth_token},
                 dataType: "json",
                 success: function (result) {
                 },
@@ -84,7 +98,7 @@ block content
                             option 24
                 br
                 br
-            button(type="submin" class="btn btn-success" onclick="JSONTest()") Post
+            button(type="submin" class="btn btn-success" onclick="postCheckin()") Post
             <!-----------------------GENERAL API------------------------------->
             h1 General API
             p These API methods to get a lot of data and not recommended for use in your mobile apps
@@ -141,6 +155,10 @@ block content
                     p This method returns the checkins which will be added in Foursquare or which done
                     br
                     button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/history/'+document.getElementById('token').value") Get
+                    h3 Remove history
+                    p This method removed the checkins from history which done for now
+                    br
+                    button(type="submin" class="btn btn-success" onclick="postRemoveHistory()") Post
 
         else
             h4 Please, generate a user token

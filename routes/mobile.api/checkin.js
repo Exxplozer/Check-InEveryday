@@ -3,6 +3,7 @@ var converter = require('../../lib/converter');
 var foursquare = require('node-foursquare')(config.get('foursquare'));
 var dateFormat = require('dateformat');
 var mongoose = require('../../lib/mongoose');
+var Сheckin = require('../../models/currentCheckin').Checkin;
 
 exports.get = function (req, res, next) {
     var now = new Date();
@@ -20,5 +21,17 @@ exports.get = function (req, res, next) {
 exports.getHistory = function (req, res, next) {
     mongoose.History(req.params.token, function (err, data) {
         res.json(converter.ConvertHystory(data));
+    });
+};
+
+exports.removeHistory = function (req, res, next) {
+    Сheckin.remove({ token : req.params.token, count :  0 }, function (err, data) {
+        if (err) {
+            console.log(err);
+            res.end("error");
+        }
+
+        console.log(data);
+        res.end("ok");
     });
 };
