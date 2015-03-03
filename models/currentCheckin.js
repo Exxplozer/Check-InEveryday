@@ -2,6 +2,7 @@ var mongoose = require('../lib/mongoose').db;
 
 var checkin = mongoose.Schema({
     venueId : String,
+    venueName : String,
     token: String,
     ll: String,
     checkinDate : Date,

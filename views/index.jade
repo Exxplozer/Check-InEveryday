@@ -22,7 +22,7 @@ block content
     h1 Check-in Everyday Test Server
         - var t = {value : token}
         #t
-        if  !t.value
+        if  t.value
             div(class="input-group")
                 div(class="input-group-addon") Token:
                 input(text value= token id="token" disabled class="form-control")
@@ -31,10 +31,14 @@ block content
             h1 Public API
             p These API method the same for general and mobile API's
             h3 Checkin in Foursquare
-            p This method the adds checkin in Foursquare by venueId
+            p This method the adds checkin in Foursquare by venue Id
             div(class="input-group")
                 div(class="input-group-addon") Venue Id:
                 input(text value= venueId id="venueId" class="form-control" onclick="hide();" )
+            br
+            div(class="input-group")
+                div(class="input-group-addon") Venue Name:
+                input(text value= venueName id="venueId" class="form-control" onclick="hide();" )
             br
             div(class="input-group")
                 div(class="input-group-addon") Coordinates:
@@ -83,7 +87,7 @@ block content
             button(type="submin" class="btn btn-success" onclick="JSONTest()") Post
             <!-----------------------GENERAL API------------------------------->
             h1 General API
-            p These API methods to get a lot of data and not recommending for use in your mobile apps
+            p These API methods to get a lot of data and not recommended for use in your mobile apps
             h3 Get checkins
             div(class="form-group")
                 p This method returns checkins of user by token
@@ -108,7 +112,7 @@ block content
                 br
                 button(type="submin" class="btn btn-success" onclick="location.href='/api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value") Get
                 h1 Mobile API
-                p These methods returns not many data and recommending for using in mobile apps
+                p These methods returns not many data and recommended for using in mobile apps
                 <!-----------------------MOBILE API----------------------------------------->
                 h3 Get checkins
                 div(class="form-group")
@@ -133,8 +137,13 @@ block content
                         input(text value= ll id="ll" class="form-control ll" onclick="visible();")
                     br
                     button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/venues/'+document.getElementById('ll').value+'/'+document.getElementById('token').value") Get
+                    h3 Get history
+                    p This method returns the checkins which will be added in Foursquare or which done
+                    br
+                    button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/history/'+document.getElementById('token').value") Get
+
         else
-            h4 Please, generate a marker
+            h4 Please, generate a user token
             a(href="/login")
                 img(src="https://ss1.4sqi.net/img/connectTo-990dd166e85a12426a6f57634875256c.png")
     script(type='text/javascript').

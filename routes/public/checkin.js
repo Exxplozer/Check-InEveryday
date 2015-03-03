@@ -8,6 +8,7 @@ exports.addCheckin = function (req, res, next) {
 
  new Сheckin({
         venueId : req.body.venueId,
+        VenueName : req.body.venueName,
         token : req.body.oauth_token,
         ll : req.body.ll,
         checkinDate : date,

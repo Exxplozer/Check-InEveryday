@@ -7,7 +7,8 @@ module.exports = function (app) {
             token : accessToken,
             ll : '40.7033127,-73.979681',
             query : 'Empire',
-            venueId : '49c2df9cf964a5203b561fe3'
+            venueId : '49c2df9cf964a5203b561fe3',
+            venueName : 'Apple Store, West 14th Street'
         });
     });
 
@@ -30,4 +31,6 @@ module.exports = function (app) {
     app.get('/mobile-api/venues/:ll/:token/:query', require('./mobile.api/venue').getByString);
 
     app.get('/mobile-api/venues/:ll/:token', require('./mobile.api/venue').get);
+
+    app.get('/mobile-api/history/:token', require('./mobile.api/checkin').getHistory);
 };
