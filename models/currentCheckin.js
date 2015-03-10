@@ -1,4 +1,4 @@
-var mongoose = require('../lib/mongoose').db;
+var mongoose = require('../libs/mongoose').db;
 
 var checkin = mongoose.Schema({
     venueId : String,

@@ -1,8 +1,8 @@
 var config = require('../../config/index');
-var converter = require('../../lib/converter');
+var converter = require('../../libs/converter');
 var foursquare = require('node-foursquare')(config.get('foursquare'));
 var dateFormat = require('dateformat');
-var mongoose = require('../../lib/mongoose');
+var mongoose = require('../../libs/mongoose');
 var Сheckin = require('../../models/currentCheckin').Checkin;
 
 exports.get = function (req, res, next) {

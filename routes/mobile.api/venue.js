@@ -1,7 +1,7 @@
 var config = require('../../config/index');
 var foursquare = require('node-foursquare')(config.get('foursquare'));
 var dateFormat = require('dateformat');
-var converter = require('../../lib/converter');
+var converter = require('../../libs/converter');
 
 exports.get = function (req, res, next) {
     var now = new Date(),
