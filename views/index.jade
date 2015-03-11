@@ -7,10 +7,11 @@ block content
             var venueId = document.getElementById("venueId").value;
             var day = document.getElementById("days").value;
             var hour = document.getElementById("hours").value;
+            var name = document.getElementById("venueName").value;
             $.ajax({
                 url: "http://checkineveryday.herokuapp.com/checkin/add",
                 type: "POST",
-                data: {ll: ll, venueId: venueId, oauth_token: oauth_token, days: day, hours: hour},
+                data: {ll: ll, venueId: venueId, oauth_token: oauth_token, days: day, hours: hour, venueName : name},
                 dataType: "json",
                 success: function (result) {
                 },
@@ -53,7 +54,7 @@ block content
             br
             div(class="input-group")
                 div(class="input-group-addon") Venue Name:
-                input(text value= venueName id="venueId" class="form-control" onclick="hide();" )
+                input(text value= venueName id="venueName" class="form-control" onclick="hide();" )
             br
             div(class="input-group")
                 div(class="input-group-addon") Coordinates:

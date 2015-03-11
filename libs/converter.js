@@ -46,7 +46,7 @@ exports.ConvertVenues = function (data) {
             delete venue.previewPhoto;
         }
 
-        venues.push(venue);
+        venues.unshift(venue);
     }
 
     return venues;
@@ -66,7 +66,7 @@ exports.ConvertHystory = function (data) {
             errors : data[i].error
         };
 
-        history.push(checkin);
+        history.unshift(checkin);
     }
 
     return history;
