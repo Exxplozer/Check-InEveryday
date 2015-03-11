@@ -8,7 +8,7 @@ exports.ConvertCheckins = function (data) {
             createdAt : data.checkins.items[i].createdAt
         };
 
-        checkins.unshift(checkin);
+        checkins.push(checkin);
     }
 
     return checkins;
@@ -46,7 +46,7 @@ exports.ConvertVenues = function (data) {
             delete venue.previewPhoto;
         }
 
-        venues.unshift(venue);
+        venues.push(venue);
     }
 
     return venues;
@@ -66,7 +66,7 @@ exports.ConvertHystory = function (data) {
             errors : data[i].error
         };
 
-        history.unshift(checkin);
+        history.push(checkin);
     }
 
     return history;
