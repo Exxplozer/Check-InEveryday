@@ -8,7 +8,7 @@ exports.ConvertCheckins = function (data) {
             createdAt : data.checkins.items[i].createdAt
         };
 
-        checkins.unshift(checkin);
+        checkins.push(checkin);
     }
 
     return checkins;
