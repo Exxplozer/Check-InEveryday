@@ -19,6 +19,7 @@ exports.addCheckin = function (req, res, next) {
                 return next(err.statusCode);
             }
 
+
             res.end();
     });
 };

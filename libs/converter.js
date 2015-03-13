@@ -52,8 +52,8 @@ exports.ConvertVenues = function (data) {
     return venues;
 };
 
-exports.ConvertSked = function (data) {
-  var sked = [],
+exports.ConvertSchedule = function (data) {
+  var schedule = [],
         i = 0;
 
     for (i; i < data.length; i++) {
@@ -67,8 +67,8 @@ exports.ConvertSked = function (data) {
             errors : data[i].error
         };
 
-        sked.push(checkin);
+        schedule.push(checkin);
     }
 
-    return sked;
+    return schedule;
 };

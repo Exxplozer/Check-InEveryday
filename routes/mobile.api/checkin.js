@@ -18,20 +18,20 @@ exports.get = function (req, res, next) {
 };
 
 
-exports.getSked = function (req, res, next) {
-    mongoose.Sked(req.params.token, function (err, data) {
-        res.json(converter.ConvertSked(data));
+exports.getSchedule = function (req, res, next) {
+    mongoose.Schedule(req.params.token, function (err, data) {
+        res.json(converter.ConvertSchedule(data));
     });
 };
 
-exports.removeHistory = function (req, res, next) {
-    Сheckin.remove({ token : req.params.token, count :  0 }, function (err, data) {
+exports.deleteCheckinFromSked = function (req, res, next) {
+
+    Сheckin.remove({ _id : mongoose.Types.ObjectId(req.params.id) }, function (err, data) {
         if (err) {
             console.log(err);
             res.end("error");
         }
-
+res.end("Ok");
         console.log(data);
-        res.end("ok");
     });
 };
