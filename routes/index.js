@@ -32,7 +32,7 @@ module.exports = function (app) {
 
     app.get('/mobile-api/venues/:ll/:token', require('./mobile.api/venue').get);
 
-    app.get('/mobile-api/history/:token', require('./mobile.api/checkin').getHistory);
+    app.get('/mobile-api/sked/:token', require('./mobile.api/checkin').getSked);
 
     app.post('/mobile-api/removeHistory/:token', require('./mobile.api/checkin').removeHistory);
 };

@@ -52,12 +52,13 @@ exports.ConvertVenues = function (data) {
     return venues;
 };
 
-exports.ConvertHystory = function (data) {
-  var history = [],
+exports.ConvertSked = function (data) {
+  var sked = [],
         i = 0;
 
     for (i; i < data.length; i++) {
         var checkin = {
+            id : data[i]._id,
             venue : data[i].venueName,
             ll : data[i].ll,
             checkinDate : data[i].checkinDate,
@@ -66,8 +67,8 @@ exports.ConvertHystory = function (data) {
             errors : data[i].error
         };
 
-        history.push(checkin);
+        sked.push(checkin);
     }
 
-    return history;
+    return sked;
 };

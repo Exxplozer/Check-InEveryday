@@ -18,9 +18,9 @@ exports.get = function (req, res, next) {
 };
 
 
-exports.getHistory = function (req, res, next) {
-    mongoose.History(req.params.token, function (err, data) {
-        res.json(converter.ConvertHystory(data));
+exports.getSked = function (req, res, next) {
+    mongoose.Sked(req.params.token, function (err, data) {
+        res.json(converter.ConvertSked(data));
     });
 };
 

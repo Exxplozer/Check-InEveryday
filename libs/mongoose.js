@@ -46,7 +46,7 @@ exports.FindCurrentCheckin = function () {
     });
 };
 
-exports.History = function (token, callback) {
+exports.Sked = function (token, callback) {
     Checkin.find({token : token}, callback);
 };
 
