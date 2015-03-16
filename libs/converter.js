@@ -68,7 +68,7 @@ exports.ConvertSchedule = function (data) {
             errors : data[i].error
         };
 
-        schedule.push(checkin);
+        schedule.unshift(checkin);
     }
 
     return schedule;
