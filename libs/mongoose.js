@@ -27,7 +27,7 @@ exports.FindCurrentCheckin = function () {
             foursquare.Checkins.addCheckin(data[i].venueId, {v : dateFormat(date, "yyyymmdd")}, data[i].token, function (err, res) {
                 if (err) {
                     console.log(err);
-                    currentData.error += err;
+                    currentData.error.puch(err);
                 } else {
                     currentData.count = --currentData.count;
                 }

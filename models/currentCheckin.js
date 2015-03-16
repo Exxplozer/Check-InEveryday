@@ -8,7 +8,7 @@ var checkin = mongoose.Schema({
     checkinDate : Date,
     count: Number,
     interval : Number,
-    error : Object
+    error : Array
 });
 
 exports.Checkin = mongoose.model('checkin', checkin);

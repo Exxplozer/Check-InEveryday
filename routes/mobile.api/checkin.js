@@ -26,7 +26,7 @@ exports.getSchedule = function (req, res, next) {
 
 exports.deleteCheckinFromSked = function (req, res, next) {
 
-    Сheckin.remove({ _id : mongoose.Types.ObjectId(req.params.id), token : req.params.token }, function (err, data) {
+    Сheckin.remove({ _id : mongoose.Types.ObjectId(req.params.id) }, function (err, data) {
         if (err) {
             console.log(err);
             res.end("error");
