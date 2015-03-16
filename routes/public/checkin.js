@@ -4,6 +4,7 @@ exports.addCheckin = function (req, res, next) {
     var countOfCheckins =
          24 / req.body.hours * req.body.days;
 
+
     var date = new Date();
 
  new Сheckin({
@@ -13,12 +14,11 @@ exports.addCheckin = function (req, res, next) {
         ll : req.body.ll,
         checkinDate : date,
         interval : req.body.hours,
-        count :  countOfCheckins
+        count :  countOfCheckins.toFixed()
     }).save(function (err) {
             if (err) {
                 return next(err.statusCode);
             }
-
 
             res.end();
     });

@@ -5,7 +5,8 @@ exports.ConvertCheckins = function (data) {
     for (i; i < data.checkins.items.length; i++) {
         var checkin = {
             name : data.checkins.items[i].venue.name,
-            createdAt : data.checkins.items[i].createdAt
+            createdAt : data.checkins.items[i].createdAt,
+            timeZoneOffset : data.checkins.items[i].timeZoneOffset
         };
 
         checkins.push(checkin);
