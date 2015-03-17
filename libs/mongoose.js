@@ -24,24 +24,28 @@ exports.FindCurrentCheckin = function () {
         for (i; i < data.length; i++) {
             var currentData = data[i];
 
-            foursquare.Checkins.addCheckin(data[i].venueId, {v : dateFormat(date, "yyyymmdd")}, data[i].token, function (err, res) {
-                if (err) {
-                    console.log(err);
-                    currentData.error.puch(err);
-                } else {
-                    currentData.count = --currentData.count;
-                }
 
-                var newDate = new Date();
-                newDate.setHours(newDate.getHours() + parseInt(currentData.interval));
-                currentData.checkinDate = newDate;
-
-                currentData.save(function (err) {
+            if(data[i].count > 0)
+            {
+                foursquare.Checkins.addCheckin(data[i].venueId, {v: dateFormat(date, "yyyymmdd")}, data[i].token, function (err, res) {
                     if (err) {
-                        console.error('Save error!');
+                        console.log(err);
+                        currentData.error.puch(err);
+                    } else {
+                        currentData.count = --currentData.count;
                     }
+
+                    var newDate = new Date();
+                    newDate.setHours(newDate.getHours() + parseInt(currentData.interval));
+                    currentData.checkinDate = newDate;
+
+                    currentData.save(function (err) {
+                        if (err) {
+                            console.error('Save error!');
+                        }
+                    });
                 });
-            });
+            }
         }
     });
 };
