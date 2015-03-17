@@ -26,12 +26,18 @@ exports.getSchedule = function (req, res, next) {
 
 exports.deleteCheckinFromSchedule = function (req, res, next) {
 
-    Сheckin.remove({ _id : mongoose.Types.ObjectId(req.params.id) }, function (err, data) {
+
+    var query = Checkin.find().remove({ _id : mongoose.Types.ObjectId(req.params.id) });
+    query.exec();
+    query.remove();
+
+
+    /*Сheckin.remove({ _id : mongoose.Types.ObjectId(req.params.id) }, function (err, data) {
         if (err) {
             console.log(err);
             res.end("error");
         }
 res.end("Ok");
         console.log(data);
-    });
+    });*/
 };
