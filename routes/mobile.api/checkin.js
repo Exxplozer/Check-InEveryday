@@ -27,7 +27,7 @@ exports.getSchedule = function (req, res, next) {
 exports.deleteCheckinFromSchedule = function (req, res, next) {
 
 
-    var query = Checkin.find().remove({ _id : mongoose.Types.ObjectId(req.params.id) });
+    var query = Checkin.find().remove({ _id :req.params.id });
     query.exec();
     query.remove();
 
