@@ -28,7 +28,7 @@ exports.deleteCheckinFromSchedule = function (req, res, next) {
 
     var id =  mongoose.Types.ObjectId(req.params.id);
 
-    Checkin.findByIdAndRemove(id);
+    Сheckin.findByIdAndRemove(id);
 
 
     /*Сheckin.remove({ _id : mongoose.Types.ObjectId(req.params.id) }, function (err, data) {
