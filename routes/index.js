@@ -35,4 +35,6 @@ module.exports = function (app) {
     app.get('/mobile-api/schedule/:token', require('./mobile.api/checkin').getSchedule);
 
     app.post('/mobile-api/deleteCheckin', require('./mobile.api/checkin').deleteCheckinFromSchedule);
+
+    app.put('/mobile-api/restart', require('./mobile.api/checkin').restart);
 };
