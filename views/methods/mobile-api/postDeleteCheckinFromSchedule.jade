@@ -1,0 +1,44 @@
+extends ../../layout
+block content
+    script(type='text/javascript').
+        postCheckin = function () {
+            var checkinId = document.getElementById("check-inId").value;
+            $.ajax({
+                url: "http://checkineveryday.herokuapp.com/mobile-api/deleteCheckin",
+                type: "POST",
+                data: { id: checkinId},
+                dataType: "json",
+                success: function (result) {
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                }
+            });
+        };
+    div.col-md-8
+        br
+        ul.nav.nav-pills
+            li(role='presentation')
+                a(href='/methods') API methods
+            li.active(role='presentation')
+                a(href='#') postDeleteCheckinFromSchedule
+        br
+        br
+        .alert.alert-info(role='alert')
+            You http://checkineveryday.herokuapp.com/api
+            strong /mobile-api/deleteCheckin
+        h4 Parameters
+        table.table.table
+            tr
+            tr
+                td id
+                td string
+                td Id of check-in from Schedule
+        h4 Result
+        p Method removed check-in from schedule
+        h4 Sample query
+        div(class="form-group")
+            div(class="input-group")
+                div(class="input-group-addon") Check-in Id:
+                input(text  id="check-inId" class="form-control" )
+                br
+        button(type="submin" class="btn btn-success" onclick="postCheckin()") Post

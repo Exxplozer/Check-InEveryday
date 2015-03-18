@@ -1,0 +1,27 @@
+extends ../../layout
+block content
+    div.col-md-8
+        br
+        ul.nav.nav-pills
+            li(role='presentation')
+                a(href='/methods') API methods
+            li.active(role='presentation')
+                a(href='#') getSchedule
+        br
+        br
+        .alert.alert-info(role='alert')
+            You http://checkineveryday.herokuapp.com/api/
+            strong /mobile-api/schedule/token
+        h4 Parameters
+        table.table.table
+            tr
+            tr
+                td token
+                td string
+                td User accsess oauth token
+        h4 Result
+        p Returns the schedule of Chek-ins
+        h4 Sample query
+        div(class="form-group")
+            div(class="input-group")
+                button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/schedule/"+token+ "'") Get

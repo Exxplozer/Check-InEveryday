@@ -15,7 +15,7 @@ exports.FindCurrentCheckin = function () {
  var date = new Date(),
      i = 0;
 
-    Checkin.find({checkinDate: { $lte: new Date()}, count: { $gt: 0}}, function (err, data) {
+    Checkin.find({checkinDate: { $lte: date}, count: { $gt: 0}}, function (err, data) {
 
         if (err) {
             console.log(err);
@@ -24,26 +24,26 @@ exports.FindCurrentCheckin = function () {
         for (i; i < data.length; i++) {
             var currentData = data[i];
 
-
             if(data[i].count > 0)
             {
-                foursquare.Checkins.addCheckin(data[i].venueId, {v: dateFormat(date, "yyyymmdd")}, data[i].token, function (err, res) {
-                    if (err) {
-                        console.log(err);
-                        currentData.error += err;
-                    } else {
-                        currentData.count = --currentData.count;
-                    }
-
-                    var newDate = new Date();
-                    newDate.setHours(newDate.getHours() + parseInt(currentData.interval));
-                    currentData.checkinDate = newDate;
-
-                    currentData.save(function (err) {
+                foursquare.Checkins.addCheckin(data[i].venueId, {v: dateFormat(date, "yyyymmdd")}, data[i].token,
+                    function (err, res) {
                         if (err) {
-                            console.error('Save error!');
+                            console.log(err);
+                            currentData.error += err;
+                        } else {
+                            currentData.count = --currentData.count;
                         }
-                    });
+
+                        var newDate = new Date();
+                        newDate.setHours(newDate.getHours() + parseInt(currentData.interval));
+                        currentData.checkinDate = newDate;
+
+                        currentData.save(function (err) {
+                            if (err) {
+                                console.error('Save error!');
+                            }
+                        });
                 });
             }
         }

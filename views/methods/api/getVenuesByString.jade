@@ -1,0 +1,44 @@
+extends ../../layout
+block content
+    div.col-md-8
+        br
+        ul.nav.nav-pills
+            li(role='presentation')
+                a(href='/methods') API methods
+            li.active(role='presentation')
+                a(href='#') getVenuesByString
+        br
+        .alert.alert-info(role='alert')
+            You http://checkineveryday.herokuapp.com/api/
+            strong venues/ll/token/query
+        h4 Parameters
+        table.table.table
+            tr
+            tr
+                td token
+                td string
+                td User accsess oauth token
+            tr
+                td ll
+                td string
+                td Coordinates Latitude and Longitude
+            tr
+                td query
+                td string
+                td Keyword for searching
+        h4 Result
+        p Returns a list of getVenues near the coordinates by string key
+        h4 Sample query
+        div(class="input-group")
+            div(class="input-group-addon") Coordinates:
+            input(text value= ll id="ll" class="form-control ll")
+        br
+        div(class="input-group")
+            div(class="input-group-addon") Keyword:
+            input(text value= query id="query1" class="form-control" )
+        br
+        button(type="submin" class="btn btn-success" onclick="location.href='/api/venues/'+document.getElementById('ll').value+'/"+token+"/'+document.getElementById('query1').value") Get
+    div.col-md-4
+        h3 Choose the coordinates
+        div(style="position: fixed; top:120px" id="map")
+            div(id = "map-canvas" style = "width: 300px; height: 300px;")

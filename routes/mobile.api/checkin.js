@@ -34,12 +34,12 @@ exports.deleteCheckinFromSchedule = function (req, res, next) {
 };
 
 exports.restart = function (req, res, next) {
-
     var countOfCheckins =
         24 / req.body.hours * req.body.days;
     var date = new Date();
 
-    Сheckin.findByIdAndUpdate(req.body.id, {count : countOfCheckins, interval : req.body.hours, checkinDate : date },
+
+    Сheckin.findByIdAndUpdate(req.body.id, {count : countOfCheckins.toFixed(), interval : req.body.hours, checkinDate : date },
         function (err, data) {
             if(err) console.log(err);
             res.end();

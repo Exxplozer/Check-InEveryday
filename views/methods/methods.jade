@@ -1,0 +1,56 @@
+extends ../layout
+block content
+    table.table.table-hover
+       tr
+            td.h4 General API methods
+            td
+       tr
+            th Name
+            th Descriptions
+       tr
+            td
+                a(href='/methods/api/postAddCheckins') postAddCheckins
+            td Method adds Check-in schedule
+       tr
+            td.h4 API methods
+            td
+       tr
+            td
+                a(href='/methods/api/getCheckins') getCheckins
+            td Returns a list of Check-ins
+       tr
+            td
+                a(href='/methods/api/getVenues')  getVenues
+            td Returns a list of getVenues near the coordinates
+       tr
+            td
+                a(href='/methods/api/getVenuesByString') getVenuesByString
+            td Returns a list of getVenues near the coordinates by string key
+
+       tr
+            td.h4 Mobile API methods
+            td
+       tr
+            td
+                a(href='/methods/mobile-api/getCheckins') getCheckins
+            td Returns a list of Check-ins
+       tr
+            td
+                a(href='/methods/mobile-api/getVenues') getVenues
+            td Returns a list of getVenues near the coordinates
+       tr
+            td
+                a(href='/methods/mobile-api/getVenuesByString') getVenuesByString
+            td Returns a list of getVenues near the coordinates bt string key
+       tr
+            td
+                a(href='/methods/mobile-api/getSchedule') getSchedule
+            td Returns the schedule of Chek-ins
+       tr
+            td
+                a(href='/methods/mobile-api/postDeleteCheckinFromSchedule') postDeleteCheckinFromSchedule
+            td Removes Chek-in of schedule
+       tr
+            td
+                a(href='/methods/mobile-api/putRestart') putRestart
+            td Restart the Check-in
