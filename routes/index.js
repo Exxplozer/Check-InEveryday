@@ -4,7 +4,7 @@ module.exports = function (app) {
     app.get('/', function (req, res) {
         var accessToken = req.session.token;
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.redirect("/methods");
         } else {
             res.render('index');
@@ -42,7 +42,7 @@ module.exports = function (app) {
         var accessToken = req.session.token;
 
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/methods");
         } else {
             res.redirect("/");
@@ -51,9 +51,9 @@ module.exports = function (app) {
 
     app.get('/methods/api/postAddCheckins', function (req, res) {
         var accessToken = req.session.token;
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render('methods/api/postAddCheckins', {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN",
+                token : accessToken,
                 ll : '40.7033127,-73.979681',
                 query : 'Empire',
                 venueId : '49c2df9cf964a5203b561fe3',
@@ -67,9 +67,9 @@ module.exports = function (app) {
     app.get('/methods/api/getCheckins', function (req, res) {
         var accessToken = req.session.token;
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/api/getCheckins", {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN"
+                token : accessToken
             });
         } else {
             res.redirect("/");
@@ -79,9 +79,9 @@ module.exports = function (app) {
     app.get('/methods/api/getVenuesByString', function (req, res) {
         var accessToken = req.session.token;
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/api/getVenuesByString", {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN"
+                token : accessToken
             });
         } else {
             res.redirect("/");
@@ -90,11 +90,9 @@ module.exports = function (app) {
 
     app.get('/methods/api/getVenues', function (req, res) {
         var accessToken = req.session.token;
-
-
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/api/getVenues", {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN"
+                token : accessToken
             });
         } else {
             res.redirect("/");
@@ -104,9 +102,9 @@ module.exports = function (app) {
     app.get('/methods/mobile-api/getCheckins', function (req, res) {
         var accessToken = req.session.token;
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/mobile-api/getCheckins", {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN"
+                token : accessToken
             });
         } else {
             res.redirect("/");
@@ -116,9 +114,9 @@ module.exports = function (app) {
     app.get('/methods/mobile-api/getVenues', function (req, res) {
         var accessToken = req.session.token;
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/mobile-api/getVenues", {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN"
+                token : accessToken
             });
         } else {
             res.redirect("/");
@@ -128,9 +126,9 @@ module.exports = function (app) {
     app.get('/methods/mobile-api/getVenuesByString', function (req, res) {
         var accessToken = req.session.token;
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/mobile-api/getVenuesByString", {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN"
+                token : accessToken
             });
         } else {
             res.redirect("/");
@@ -140,9 +138,9 @@ module.exports = function (app) {
     app.get('/methods/mobile-api/getSchedule', function (req, res) {
         var accessToken = req.session.token;
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/mobile-api/getSchedule", {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN"
+                token : accessToken
             });
         } else {
             res.redirect("/");
@@ -152,9 +150,9 @@ module.exports = function (app) {
     app.get('/methods/mobile-api/postDeleteCheckinFromSchedule', function (req, res) {
         var accessToken = req.session.token;
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/mobile-api/postDeleteCheckinFromSchedule", {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN"
+                token : accessToken
             });
         } else {
             res.redirect("/");
@@ -164,9 +162,9 @@ module.exports = function (app) {
     app.get('/methods/mobile-api/putRestart', function (req, res) {
         var accessToken = req.session.token;
 
-        if (accessToken !== null || accessToken !== '') {
+        if (accessToken) {
             res.render("methods/mobile-api/putRestart", {
-                token : "EW4MTIAESYFZOZU4L1W0DAMPAA53SMXC1ERO3FCCKWTNP1UN"
+                token : accessToken
             });
         } else {
             res.redirect("/");
