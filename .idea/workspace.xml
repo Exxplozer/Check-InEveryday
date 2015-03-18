@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/methods/mobile-api/putRestart.jade" afterPath="$PROJECT_DIR$/views/methods/mobile-api/putRestart.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Check-InEveryday.iws" />
@@ -52,8 +52,8 @@
           <file leaf-file-name="putRestart.jade" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/methods/mobile-api/putRestart.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="1515">
-                  <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+                <state vertical-scroll-proportion="0.8484849" vertical-offset="921" max-vertical-offset="1515">
+                  <caret line="95" column="80" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
                   <folding />
                 </state>
               </provider>
@@ -295,8 +295,8 @@
         <option value="$PROJECT_DIR$/views/methods/api/postAddCheckins.jade" />
         <option value="$PROJECT_DIR$/views/methods/mobile-api/postDeleteCheckinFromSchedule.jade" />
         <option value="$PROJECT_DIR$/routes/mobile.api/checkin.js" />
-        <option value="$PROJECT_DIR$/views/methods/mobile-api/putRestart.jade" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/methods/mobile-api/putRestart.jade" />
       </list>
     </option>
   </component>
@@ -672,12 +672,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00023" summary="Update">
-      <created>1424686847752</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1424686847752</updated>
-    </task>
     <task id="LOCAL-00024" summary="Update">
       <created>1424687213312</created>
       <option name="number" value="00024" />
@@ -966,7 +960,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426686258766</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="token : accessToken">
+      <created>1426686698001</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1426686698001</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1030,7 +1030,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="index.jade update" />
     <MESSAGE value="libs" />
     <MESSAGE value="unshift" />
     <MESSAGE value="mongoose version" />
@@ -1055,7 +1054,8 @@
     <MESSAGE value="restart" />
     <MESSAGE value="Update API and UI" />
     <MESSAGE value="remove alert" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove alert" />
+    <MESSAGE value="token : accessToken" />
+    <option name="LAST_COMMIT_MESSAGE" value="token : accessToken" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1415,14 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/methods/mobile-api/putRestart.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="1515">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/mobile.api/checkin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="780">
@@ -1443,6 +1435,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2770898" vertical-offset="0" max-vertical-offset="2670">
           <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/methods/mobile-api/putRestart.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8484849" vertical-offset="921" max-vertical-offset="1515">
+          <caret line="95" column="80" selection-start-line="95" selection-start-column="80" selection-end-line="95" selection-end-column="80" />
           <folding />
         </state>
       </provider>
