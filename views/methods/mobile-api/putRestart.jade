@@ -11,10 +11,8 @@ block content
                 data: { id: checkinId,  days: day, hours: hour},
                 dataType: "json",
                 success: function (result) {
-                    alert(result);
                 },
                 error: function (xhr, ajaxOptions, thrownError) {
-                    alert(xhr + " " + ajaxOptions + " " + thrownError);
                 }
             });
         };
