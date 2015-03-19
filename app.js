@@ -1,5 +1,6 @@
 var express = require('express');
 var path = require('path');
+var http = require("http");
 var mongoose = require('./libs/mongoose');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -52,3 +53,22 @@ app.use(function (err, req, res, next) {
 setInterval(function () {
     mongoose.FindCurrentCheckin();
 }, 500);
+
+
+setInterval(function () {
+    var options = {
+        path: '/AreYouOk',
+        host: 'http://checkineveryday.herokuapp.com',
+        method: 'GET'
+    };
+
+      var req =   http.request(options, function(res)
+        {
+            console.log(res);
+        });
+
+    req.on('error', function(err) {
+            console.log(err);
+        });
+    req.end();
+}, 1800000);

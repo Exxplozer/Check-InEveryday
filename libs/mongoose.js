@@ -24,7 +24,7 @@ exports.FindCurrentCheckin = function () {
         for (i; i < data.length; i++) {
             var currentData = data[i];
 
-            if(data[i].count > 0)
+            if(currentData.count > 0)
             {
                 foursquare.Checkins.addCheckin(data[i].venueId, {v: dateFormat(date, "yyyymmdd")}, data[i].token,
                     function (err, res) {
@@ -38,7 +38,6 @@ exports.FindCurrentCheckin = function () {
                         var newDate = new Date();
                         newDate.setHours(newDate.getHours() + parseInt(currentData.interval));
                         currentData.checkinDate = newDate;
-
                         currentData.save(function (err) {
                             if (err) {
                                 console.error('Save error!');

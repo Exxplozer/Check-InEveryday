@@ -28,8 +28,11 @@ exports.getSchedule = function (req, res, next) {
 exports.deleteCheckinFromSchedule = function (req, res, next) {
 
     Сheckin.findByIdAndRemove(req.body.id, function( err, data) {
-        if(err) console.log(err);
-        res.end();
+        if(err) {
+            console.log(err);
+            res.end('Error');
+        }
+        res.end('OK');
     });
 };
 
@@ -41,7 +44,10 @@ exports.restart = function (req, res, next) {
 
     Сheckin.findByIdAndUpdate(req.body.id, {count : countOfCheckins.toFixed(), interval : req.body.hours, checkinDate : date },
         function (err, data) {
-            if(err) console.log(err);
-            res.end();
+            if(err) {
+                console.log(err);
+                res.end('Error');
+            }
+            res.end('OK');
     });
 };

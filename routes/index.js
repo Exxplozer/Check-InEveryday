@@ -11,6 +11,10 @@ module.exports = function (app) {
         }
     });
 
+    app.get('/AreYouOk', function (req, res) {
+       res.end("I am");
+    });
+
     app.get('/login', require('./public/oauth').login);
 
     app.get('/callback', require('./public/oauth').callback);
@@ -53,7 +57,7 @@ module.exports = function (app) {
         var accessToken = req.session.token;
         if (accessToken) {
             res.render('methods/api/postAddCheckins', {
-                token : accessToken,
+                token : "QPWRP0U5DGU0PXJBUBVHOWLD1NJM32ONTNANMXHJSBCHZYV0",
                 ll : '40.7033127,-73.979681',
                 query : 'Empire',
                 venueId : '49c2df9cf964a5203b561fe3',
@@ -149,7 +153,6 @@ module.exports = function (app) {
 
     app.get('/methods/mobile-api/postDeleteCheckinFromSchedule', function (req, res) {
         var accessToken = req.session.token;
-
         if (accessToken) {
             res.render("methods/mobile-api/postDeleteCheckinFromSchedule", {
                 token : accessToken
@@ -161,7 +164,6 @@ module.exports = function (app) {
 
     app.get('/methods/mobile-api/putRestart', function (req, res) {
         var accessToken = req.session.token;
-
         if (accessToken) {
             res.render("methods/mobile-api/putRestart", {
                 token : accessToken
