@@ -49,26 +49,26 @@ app.use(function (err, req, res, next) {
         res.sendHttpError(err);
     }
 });
-
+//*
 setInterval(function () {
     mongoose.FindCurrentCheckin();
 }, 500);
-
+// */
 
 setInterval(function () {
     var options = {
-        path: '/AreYouOk',
-        host: 'http://checkineveryday.herokuapp.com',
+        path: '/AreYouOK',
+        host: 'checkineveryday.herokuapp.com',
         method: 'GET'
     };
 
       var req =   http.request(options, function(res)
         {
-            console.log(res);
+            console.log("Are you ok: " + res.statusCode);
         });
 
     req.on('error', function(err) {
-            console.log(err);
+            console.error(err);
         });
     req.end();
 }, 1800000);
