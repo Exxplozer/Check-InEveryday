@@ -94,6 +94,7 @@ module.exports = function (app) {
 
     app.get('/methods/api/getVenues', function (req, res) {
         var accessToken = req.session.token;
+
         if (accessToken) {
             res.render("methods/api/getVenues", {
                 token : accessToken
@@ -153,6 +154,7 @@ module.exports = function (app) {
 
     app.get('/methods/mobile-api/postDeleteCheckinFromSchedule', function (req, res) {
         var accessToken = req.session.token;
+
         if (accessToken) {
             res.render("methods/mobile-api/postDeleteCheckinFromSchedule", {
                 token : accessToken
@@ -164,6 +166,7 @@ module.exports = function (app) {
 
     app.get('/methods/mobile-api/putRestart', function (req, res) {
         var accessToken = req.session.token;
+
         if (accessToken) {
             res.render("methods/mobile-api/putRestart", {
                 token : accessToken

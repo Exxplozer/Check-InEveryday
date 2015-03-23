@@ -42,7 +42,8 @@ exports.restart = function (req, res, next) {
     var date = new Date();
 
 
-    Сheckin.findByIdAndUpdate(req.body.id, {count : countOfCheckins.toFixed(), interval : req.body.hours, checkinDate : date },
+    Сheckin.findByIdAndUpdate(req.body.id, {count : countOfCheckins.toFixed(), interval : req.body.hours,
+            checkinDate : date },
         function (err, data) {
             if(err) {
                 console.log(err);

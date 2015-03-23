@@ -48,6 +48,7 @@ app.use(function (err, req, res, next) {
         err = new HttpError(err);
         res.sendHttpError(err);
     }
+    next();
 });
 //*
 setInterval(function () {
@@ -62,12 +63,12 @@ setInterval(function () {
         method: 'GET'
     };
 
-      var req =   http.request(options, function(res)
+      var req =   http.request(options, function (res)
         {
             console.log("Are you ok: " + res.statusCode);
         });
 
-    req.on('error', function(err) {
+    req.on('error', function (err) {
             console.error(err);
         });
     req.end();

@@ -12,8 +12,7 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function (callback) {});
 
 exports.FindCurrentCheckin = function () {
- var date = new Date(),
-     i = 0;
+ var date = new Date(), i = 0;
 
     Checkin.find({checkinDate: { $lte: date}, count: { $gt: 0}}, function (err, data) {
 
@@ -24,7 +23,7 @@ exports.FindCurrentCheckin = function () {
         for (i; i < data.length; i++) {
             var currentData = data[i];
 
-            if(currentData.count > 0)
+            if (currentData.count > 0)
             {
                 foursquare.Checkins.addCheckin(data[i].venueId, {v: dateFormat(date, "yyyymmdd")}, data[i].token,
                     function (err, res) {

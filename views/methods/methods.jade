@@ -10,26 +10,26 @@ block content
        tr
             td
                 a(href='/methods/api/postAddCheckins') postAddCheckins
-            td Method adds Check-in schedule
+            td Adds Check-in into the schedule
        tr
             td.h4 API methods
-            td
+            td Returns detailed information (not recommended to use in mobile apps)
        tr
             td
                 a(href='/methods/api/getCheckins') getCheckins
-            td Returns a list of Check-ins
+            td Returns a list of Check-ins with detailed information
        tr
             td
                 a(href='/methods/api/getVenues')  getVenues
-            td Returns a list of getVenues near the coordinates
+            td Returns a list of Venues near the coordinates
        tr
             td
                 a(href='/methods/api/getVenuesByString') getVenuesByString
-            td Returns a list of getVenues near the coordinates by string key
+            td Returns a list of Venues near the coordinates by string key
 
        tr
             td.h4 Mobile API methods
-            td
+            td Returns a simple information, special to mobile apps
        tr
             td
                 a(href='/methods/mobile-api/getCheckins') getCheckins
@@ -37,11 +37,11 @@ block content
        tr
             td
                 a(href='/methods/mobile-api/getVenues') getVenues
-            td Returns a list of getVenues near the coordinates
+            td Returns a list of Venues near the coordinates
        tr
             td
                 a(href='/methods/mobile-api/getVenuesByString') getVenuesByString
-            td Returns a list of getVenues near the coordinates bt string key
+            td Returns a list of Venues near the coordinates bt string key
        tr
             td
                 a(href='/methods/mobile-api/getSchedule') getSchedule
@@ -49,8 +49,8 @@ block content
        tr
             td
                 a(href='/methods/mobile-api/postDeleteCheckinFromSchedule') postDeleteCheckinFromSchedule
-            td Removes Chek-in of schedule
+            td Deletes Chek-in from schedule
        tr
             td
                 a(href='/methods/mobile-api/putRestart') putRestart
-            td Restart the Check-in
+            td Restarts the Check-in
