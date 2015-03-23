@@ -90,8 +90,8 @@
       <file leaf-file-name="methods.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/methods/methods.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7559055" vertical-offset="135" max-vertical-offset="915">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.6614173" vertical-offset="75" max-vertical-offset="945">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -564,12 +564,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00028" summary="jslint">
-      <created>1424704113171</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1424704113171</updated>
-    </task>
     <task id="LOCAL-00029" summary="jslint">
       <created>1424704204296</created>
       <option name="number" value="00029" />
@@ -858,7 +852,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427099762825</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary=".b">
+      <created>1427100265936</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1427100265936</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -901,7 +901,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="unshift &amp; venueName" />
     <MESSAGE value="push(" />
     <MESSAGE value="rename history to sked" />
     <MESSAGE value="schedule" />
@@ -926,7 +925,8 @@
     <MESSAGE value="Are you okay and check the token" />
     <MESSAGE value="Are you okay updated" />
     <MESSAGE value="some updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="some updates" />
+    <MESSAGE value=".b" />
+    <option name="LAST_COMMIT_MESSAGE" value=".b" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1320,8 +1320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/methods/methods.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7559055" vertical-offset="135" max-vertical-offset="915">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.6614173" vertical-offset="75" max-vertical-offset="945">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
           <folding />
         </state>
       </provider>
