@@ -4,7 +4,7 @@ block content
         postCheckin = function () {
             var checkinId = document.getElementById("check-inId").value;
             $.ajax({
-                url: "http://checkineveryday.herokuapp.com/mobile-api/deleteCheckin",
+                url: "https://checkineveryday.herokuapp.com/mobile-api/deleteCheckin",
                 type: "POST",
                 data: { id: checkinId},
                 dataType: "json",
@@ -25,7 +25,7 @@ block content
         br
         br
         .alert.alert-info(role='alert')
-            You http://checkineveryday.herokuapp.com/api
+            You https://checkineveryday.herokuapp.com/api
             strong /mobile-api/deleteCheckin
         h4 Parameters
         table.table.table

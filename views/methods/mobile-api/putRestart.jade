@@ -6,7 +6,7 @@ block content
             var day = document.getElementById("days").value;
             var hour = document.getElementById("hours").value;
             $.ajax({
-                url: "http://checkineveryday.herokuapp.com/mobile-api/restart",
+                url: "https://checkineveryday.herokuapp.com/mobile-api/restart",
                 type: "PUT",
                 data: { id: checkinId,  days: day, hours: hour},
                 dataType: "json",
@@ -26,7 +26,7 @@ block content
         br
         br
         .alert.alert-info(role='alert')
-            You http://checkineveryday.herokuapp.com/api
+            You https://checkineveryday.herokuapp.com/api
             strong /mobile-api/restart
         h4 Parameters
         table.table.table
