@@ -5,7 +5,6 @@ exports.addCheckin = function (req, res, next) {
         var countOfCheckins =
             24 / req.body.hours * req.body.days;
 
-
         var date = new Date();
 
         new Сheckin({

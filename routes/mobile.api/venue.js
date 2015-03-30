@@ -11,6 +11,7 @@ exports.get = function (req, res, next) {
         req.params.token,
         function (error, data) {
             if (error) {
+                console.log(error);
                 return next(error);
             }
 
@@ -27,7 +28,7 @@ exports.getByString = function (req, res, next) {
         req.params.token,
         function (error, data) {
             if (error) {
-                return next(error);
+                console.log(error);
             }
 
             res.json(converter.ConvertVenues(data));

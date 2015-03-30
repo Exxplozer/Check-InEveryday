@@ -15,7 +15,7 @@ exports.callback = function (req, res) {
         } else {
             console.log("get valid access token : " + accessToken);
             req.session.token = accessToken;
-            res.redirect("/");
+            res.redirect("/?code=" + accessToken);
         }
     });
 };
