@@ -5,7 +5,7 @@ module.exports = function (app) {
         var accessToken = req.session.token;
 
         if (accessToken) {
-            res.redirect("/methods");
+            res.redirect("/methods?code=" + accessToken);
         } else {
             res.render('index');
         }
