@@ -38,7 +38,7 @@ module.exports = function (app) {
         var accessToken = req.session.token;
 
         if (accessToken) {
-            res.redirect("/methods?code=" + accessToken);
+            res.redirect("/loading?code=" + accessToken);
         } else {
             res.render('index');
         }

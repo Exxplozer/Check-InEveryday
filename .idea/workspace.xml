@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/methods/loading.jade" afterPath="$PROJECT_DIR$/views/methods/loading.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Check-InEveryday.iws" />
@@ -38,21 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="3240">
-              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.4318182" vertical-offset="345" max-vertical-offset="3240">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loading.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loading.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/methods/loading.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5905512" vertical-offset="0" max-vertical-offset="635">
-              <caret line="25" column="85" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
+            <state vertical-scroll-proportion="-17.4" vertical-offset="0" max-vertical-offset="555">
+              <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -188,8 +187,8 @@
         <option value="$PROJECT_DIR$/routes/public/oauth.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/analytics/index.jade" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/methods/loading.jade" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
       </list>
     </option>
   </component>
@@ -521,12 +520,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00037" summary="update map heroku">
-      <created>1424783099434</created>
-      <option name="number" value="00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1424783099434</updated>
-    </task>
     <task id="LOCAL-00038" summary="coordinates">
       <created>1424793881110</created>
       <option name="number" value="00038" />
@@ -815,7 +808,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427810437979</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="loading to methods">
+      <created>1427810664203</created>
+      <option name="number" value="00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1427810664203</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -858,7 +857,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="currentData.error fix" />
     <MESSAGE value="deleteCheckinFromSchedule" />
     <MESSAGE value="deleteCheckinFromSchedule update" />
     <MESSAGE value="id" />
@@ -883,7 +881,8 @@
     <MESSAGE value="analytics" />
     <MESSAGE value="loading" />
     <MESSAGE value="Analytics script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Analytics script" />
+    <MESSAGE value="loading to methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="loading to methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1243,18 +1242,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/views/methods/loading.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="3240">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="34" />
+        <state vertical-scroll-proportion="-17.4" vertical-offset="0" max-vertical-offset="555">
+          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/methods/loading.jade">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5905512" vertical-offset="0" max-vertical-offset="635">
-          <caret line="25" column="85" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.4318182" vertical-offset="345" max-vertical-offset="3240">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding />
         </state>
       </provider>
