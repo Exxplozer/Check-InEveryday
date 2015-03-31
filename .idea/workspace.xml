@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/analytics/index.jade" afterPath="$PROJECT_DIR$/views/analytics/index.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -101,8 +100,8 @@
       <file leaf-file-name="layout.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14545454" vertical-offset="0" max-vertical-offset="825">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="13" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.3090909" vertical-offset="60" max-vertical-offset="885">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -521,12 +520,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00042" summary="sessions maxAge">
-      <created>1425306568934</created>
-      <option name="number" value="00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1425306568934</updated>
-    </task>
     <task id="LOCAL-00043" summary="add history">
       <created>1425385803090</created>
       <option name="number" value="00043" />
@@ -815,7 +808,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427813443768</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="2 script1">
+      <created>1427813674590</created>
+      <option name="number" value="00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1427813674590</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -858,7 +857,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Сheckin" />
     <MESSAGE value="Types.ObjectId" />
     <MESSAGE value="Emm..." />
     <MESSAGE value="restart" />
@@ -883,7 +881,8 @@
     <MESSAGE value="script" />
     <MESSAGE value="script inside to head" />
     <MESSAGE value="2 script" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 script" />
+    <MESSAGE value="2 script1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 script1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1254,8 +1253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14545454" vertical-offset="0" max-vertical-offset="825">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="13" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.3090909" vertical-offset="60" max-vertical-offset="885">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding />
         </state>
       </provider>
