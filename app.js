@@ -50,7 +50,7 @@ app.use(function (err, req, res, next) {
     }
     next();
 });
-//*
+/*
 setInterval(function () {
     mongoose.FindCurrentCheckin();
 }, 500);

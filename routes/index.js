@@ -1,5 +1,34 @@
 module.exports = function (app) {
 
+
+
+     /* analytics */
+    app.get('/analytics/venues', function (req, res) {
+
+        res.render("analytics/index");
+    });
+
+    app.get('/analytics/checkins', function (req, res) {
+
+        res.render("analytics/index");
+    });
+
+    app.get('/analytics/schedule', function (req, res) {
+
+        res.render("analytics/index");
+    });
+
+    app.get('/analytics/settings', function (req, res) {
+
+        res.render("analytics/index");
+    });
+
+    app.get('/analytics/login', function (req, res) {
+
+        res.render("analytics/index");
+    });
+
+
     /* public */
     app.get('/', function (req, res) {
         var accessToken = req.session.token;
