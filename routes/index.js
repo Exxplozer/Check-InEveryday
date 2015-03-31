@@ -28,7 +28,6 @@ module.exports = function (app) {
         res.render("analytics/index");
     });
 
-
     app.get('/loading', function (req, res) {
 
         res.render("methods/loading");
@@ -39,7 +38,7 @@ module.exports = function (app) {
         var accessToken = req.session.token;
 
         if (accessToken) {
-            res.redirect("methods/loading?code=" + accessToken);
+            res.redirect("/methods?code=" + accessToken);
         } else {
             res.render('index');
         }

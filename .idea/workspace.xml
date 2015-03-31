@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/analytics/index.jade" afterPath="$PROJECT_DIR$/views/analytics/index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/methods/loading.jade" afterPath="$PROJECT_DIR$/views/methods/loading.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Check-InEveryday.iws" />
@@ -40,18 +41,18 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2518" max-vertical-offset="3255">
-              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="3240">
+              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loading.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="loading.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/methods/loading.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="555">
-              <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.5905512" vertical-offset="0" max-vertical-offset="635">
+              <caret line="25" column="85" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -100,7 +101,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="1200">
+            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1200">
               <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
               <folding />
             </state>
@@ -117,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/analytics/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25984251" vertical-offset="0" max-vertical-offset="635">
+            <state vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="255">
               <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding />
             </state>
@@ -185,10 +186,10 @@
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/routes/public/checkin.js" />
         <option value="$PROJECT_DIR$/routes/public/oauth.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/views/methods/loading.jade" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/analytics/index.jade" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/methods/loading.jade" />
       </list>
     </option>
   </component>
@@ -520,12 +521,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00036" summary="update map">
-      <created>1424782975502</created>
-      <option name="number" value="00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1424782975502</updated>
-    </task>
     <task id="LOCAL-00037" summary="update map heroku">
       <created>1424783099434</created>
       <option name="number" value="00037" />
@@ -814,7 +809,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427810242732</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Analytics script">
+      <created>1427810437979</created>
+      <option name="number" value="00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1427810437979</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -857,7 +858,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="checkin count" />
     <MESSAGE value="currentData.error fix" />
     <MESSAGE value="deleteCheckinFromSchedule" />
     <MESSAGE value="deleteCheckinFromSchedule update" />
@@ -882,7 +882,8 @@
     <MESSAGE value="methods code param" />
     <MESSAGE value="analytics" />
     <MESSAGE value="loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="loading" />
+    <MESSAGE value="Analytics script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Analytics script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1226,18 +1227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/methods/loading.jade">
+    <entry file="file://$PROJECT_DIR$/views/analytics/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="555">
-          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3255">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="255">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1250,10 +1243,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/analytics/index.jade">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25984251" vertical-offset="0" max-vertical-offset="635">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="3240">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/methods/loading.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5905512" vertical-offset="0" max-vertical-offset="635">
+          <caret line="25" column="85" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
           <folding />
         </state>
       </provider>
