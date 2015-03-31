@@ -80,8 +80,8 @@
       <file leaf-file-name="layout.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25454545" vertical-offset="0" max-vertical-offset="1245">
-              <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.47272727" vertical-offset="405" max-vertical-offset="1230">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -520,12 +520,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00050" summary="push">
-      <created>1426071158506</created>
-      <option name="number" value="00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1426071158548</updated>
-    </task>
     <task id="LOCAL-00051" summary="unshift &amp; venueName">
       <created>1426078908596</created>
       <option name="number" value="00051" />
@@ -814,7 +808,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427818286802</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="+script">
+      <created>1427818504541</created>
+      <option name="number" value="00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1427818504542</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -879,10 +879,10 @@
     <MESSAGE value="2 script 2" />
     <MESSAGE value="-script" />
     <MESSAGE value="script" />
-    <MESSAGE value="+script" />
     <MESSAGE value="++script" />
     <MESSAGE value="+-script" />
-    <option name="LAST_COMMIT_MESSAGE" value="+-script" />
+    <MESSAGE value="+script" />
+    <option name="LAST_COMMIT_MESSAGE" value="+script" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1215,6 +1215,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.1176472" vertical-offset="1980" max-vertical-offset="5205">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1252,8 +1253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25454545" vertical-offset="0" max-vertical-offset="1245">
-          <caret line="14" column="61" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.47272727" vertical-offset="405" max-vertical-offset="1230">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
