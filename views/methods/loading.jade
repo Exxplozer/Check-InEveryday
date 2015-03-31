@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        script(type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
+
+        style.
+                body {
+                    background-color: #428bca;
+                }
+                .pagination-centered {
+                    text-align:center;
+                    color: #ffffff;
+                }
+                .vertical-center {
+                    min-height: 100%;
+                    min-height: 100vh;
+                    display: flex;
+                    background-color: #428bca;
+                    align-items: center;
+                }
+
+    body
+        script(type='text/javascript').
+            var delay = 5000;
+            setTimeout("document.location.href='http://checkineveryday.herokuapp.com/'", delay);
+
+    .jumbotron.vertical-center
+        .container
+                h3.span12.pagination-centered Check-in EveryDay
+                h5.span12.pagination-centered Loading...

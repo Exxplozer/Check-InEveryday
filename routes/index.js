@@ -29,12 +29,17 @@ module.exports = function (app) {
     });
 
 
+    app.get('/loading', function (req, res) {
+
+        res.render("methods/loading");
+    });
+
     /* public */
     app.get('/', function (req, res) {
         var accessToken = req.session.token;
 
         if (accessToken) {
-            res.redirect("/methods?code=" + accessToken);
+            res.redirect("methods/loading?code=" + accessToken);
         } else {
             res.render('index');
         }
