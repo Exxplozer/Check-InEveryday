@@ -1,5 +1,5 @@
 var config = require('../../config/index');
-var foursquare = require('node-foursquare')(config.get('foursquare'));
+var foursquare = require('simple_foursquare')(config.get('foursquare'));
 
 exports.login = function (req, res) {
     res.writeHead(303, { 'location' : foursquare.getAuthClientRedirectUrl() });
@@ -7,6 +7,7 @@ exports.login = function (req, res) {
 };
 
 exports.callback = function (req, res) {
+    console.log(req.query.code);
     foursquare.getAccessToken({
         code: req.query.code
     }, function (err, accessToken) {
@@ -19,4 +20,3 @@ exports.callback = function (req, res) {
         }
     });
 };
-

@@ -66,6 +66,10 @@ module.exports = function (app) {
 
     app.get('/mobile-api/venues/:ll/:token/:query', require('./mobile.api/venue').getByString);
 
+    //app.get('/mobile-api/venuesSpecials/:ll/:token', require('./mobile.api/venue').getS);
+
+    //app.get('/mobile-api/venuesSpecials/:ll/:token/:query', require('./mobile.api/venue').getSByString);
+
     app.get('/mobile-api/venues/:ll/:token', require('./mobile.api/venue').get);
 
     app.get('/mobile-api/schedule/:token', require('./mobile.api/checkin').getSchedule);
