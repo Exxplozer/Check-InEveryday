@@ -6,4 +6,4 @@ var exception = mongoose.Schema({
     StackTrace: String
 });
 
-exports.Exception = mongoose.model('checkin', exception);
+exports.Exception = mongoose.model('exception', exception);
