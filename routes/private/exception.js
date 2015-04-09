@@ -1,6 +1,7 @@
 var Exception = require('../../models/currentCheckin').Exception;
 
 exports.put = function (req, res, next) {
+    console.log(!!!!!"HERE!!!!\n");
     console.log(req.body.message + " " + req.body.targetSite);
       new Exception({
             message : req.body.message,
