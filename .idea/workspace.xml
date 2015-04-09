@@ -91,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/routes/private/exception.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.24705882" vertical-offset="0" max-vertical-offset="850">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -462,12 +462,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00057" summary="return accessToken">
-      <created>1426520233360</created>
-      <option name="number" value="00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1426520233360</updated>
-    </task>
     <task id="LOCAL-00058" summary="code">
       <created>1426520367691</created>
       <option name="number" value="00058" />
@@ -756,7 +750,13 @@
       <option name="project" value="LOCAL" />
       <updated>1428595679913</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="exception">
+      <created>1428595959293</created>
+      <option name="number" value="00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1428595959294</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1218,7 +1218,7 @@
     <entry file="file://$PROJECT_DIR$/routes/private/exception.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24705882" vertical-offset="0" max-vertical-offset="850">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
           <folding />
         </state>
       </provider>

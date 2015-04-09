@@ -12,6 +12,4 @@ exports.put = function (req, res, next) {
               }
               res.end('OK');
           });
-} else {
-    res.end('Error');
 };
