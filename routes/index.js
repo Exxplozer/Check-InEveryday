@@ -1,8 +1,6 @@
 module.exports = function (app) {
 
-
-
-     /* analytics */
+    /* analytics */
     app.get('/analytics/venues', function (req, res) {
 
         res.render("analytics/index");
@@ -45,7 +43,7 @@ module.exports = function (app) {
     });
 
     app.get('/AreYouOk', function (req, res) {
-       res.end("I am");
+        res.end("I am");
     });
 
     app.get('/login', require('./public/oauth').login);
@@ -53,6 +51,10 @@ module.exports = function (app) {
     app.get('/callback', require('./public/oauth').callback);
 
     app.post('/checkin/add', require('./public/checkin').addCheckin);
+
+
+    /* private */
+    app.put('/private/exception', require('./private/exception').put);
 
     /* api */
     app.get('/api/checkins/:token', require('./api/checkin').get);
@@ -65,10 +67,6 @@ module.exports = function (app) {
     app.get('/mobile-api/checkins/:token', require('./mobile.api/checkin').get);
 
     app.get('/mobile-api/venues/:ll/:token/:query', require('./mobile.api/venue').getByString);
-
-    //app.get('/mobile-api/venuesSpecials/:ll/:token', require('./mobile.api/venue').getS);
-
-    //app.get('/mobile-api/venuesSpecials/:ll/:token/:query', require('./mobile.api/venue').getSByString);
 
     app.get('/mobile-api/venues/:ll/:token', require('./mobile.api/venue').get);
 

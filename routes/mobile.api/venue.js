@@ -5,18 +5,17 @@ var converter = require('../../libs/converter');
 
 exports.get = function (req, res, next) {
     var now = new Date(),
-        ll = req.params.ll.split(','),
-        token = req.params.token;
-    console.log(token);
-    foursquare.Users.getUser('self', token,
+        ll = req.params.ll.split(',');
+
+    foursquare.Venues.explore(ll[0], ll[1], null, { venuePhotos : 1, v : dateFormat(now, "yyyymmdd")},
+        req.params.token,
         function (error, data) {
             if (error) {
                 console.log(error);
                 return next(error);
             }
-            console.log(data);
-           // res.json(converter.ConvertVenues(data));
-            res.json(data);
+
+            res.json(converter.ConvertVenues(data));
         });
 };
 

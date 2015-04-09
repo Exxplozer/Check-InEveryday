@@ -15,7 +15,7 @@ exports.get = function (req, res, next) {
             }
 
             res.json(converter.ConvertCheckins(data));
-    });
+        });
 };
 
 
@@ -50,5 +50,5 @@ exports.restart = function (req, res, next) {
                 res.end('Error');
             }
             res.end('OK');
-    });
+        });
 };
