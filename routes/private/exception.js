@@ -1,4 +1,4 @@
-var Exception = require('../../models/currentCheckin').Exception;
+var Exception = require('../../models/exception').Exception;
 
 exports.put = function (req, res, next) {
     console.log(!!!!!"HERE!!!!\n");
