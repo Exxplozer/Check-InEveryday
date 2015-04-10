@@ -1,8 +1,8 @@
-var Exception = require('../../models/exception').Exception;
-
 exports.put = function (req, res, next) {
     console.log(!!!!!"HERE!!!!\n");
     console.log(req.body.message + " " + req.body.targetSite);
+    var Exception = require('../../models/exception').Exception;
+    
       new Exception({
             message : req.body.message,
             Target : req.body.targetSite,
