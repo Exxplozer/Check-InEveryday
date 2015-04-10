@@ -22,7 +22,6 @@
     "node-foursquare" : "*",
     "oauth" : "*",
     "request" : "*",
-    "dateformat" : "*",
-    "simple_foursquare" : "*"
+    "dateformat" : "*"
   }
 }
