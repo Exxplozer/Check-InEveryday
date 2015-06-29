@@ -139,6 +139,20 @@ module.exports = function (app) {
         }
     });
 
+    app.get('/methods/api/getRestaurants', function (req, res) {
+        var accessToken = req.session.token;
+
+        if (accessToken) {
+            res.render("methods/api/getRestaurants", {
+                token : accessToken
+            });
+        } else {
+            res.redirect("/");
+        }
+    });
+
+
+
     app.get('/methods/mobile-api/getCheckins', function (req, res) {
         var accessToken = req.session.token;
 
