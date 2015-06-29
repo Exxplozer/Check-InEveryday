@@ -32,3 +32,19 @@ exports.getByString = function (req, res, next) {
             res.json(data);
         });
 };
+
+exports.getRestaurants = function (req, res, next) {
+    var now = new Date(),
+        ll = req.params.ll.split(',');
+
+    foursquare.Venues.explore(ll[0], ll[1], null, { categoryId : '4d4b7105d754a06374d81259',
+            v : dateFormat(now, "yyyymmdd") },
+        req.params.token,
+        function (error, data) {
+            if (error) {
+                return next(error);
+            }
+
+            res.json(data);
+        });
+};

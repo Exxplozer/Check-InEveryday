@@ -61,6 +61,8 @@ module.exports = function (app) {
 
     app.get('/api/venues/:ll/:token', require('./api/venue').get);
 
+    app.get('/api/restaurants/:ll/:token', require('./api/venue').getRestaurants);
+
     /* mobile api */
     app.get('/mobile-api/checkins/:token', require('./mobile.api/checkin').get);
 
