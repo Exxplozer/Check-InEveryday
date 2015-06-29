@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" afterPath="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/methods/methods.jade" afterPath="$PROJECT_DIR$/views/methods/methods.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Check-InEveryday.iws" />
@@ -29,17 +28,17 @@
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="145" column="50" selection-start-line="145" selection-start-column="50" selection-end-line="145" selection-end-column="50" />
+              <caret line="141" column="13" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getRestaurants.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getRestaurants.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/methods/api/getRestaurants.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5376106">
-              <caret line="27" column="92" selection-start-line="27" selection-start-column="92" selection-end-line="27" selection-end-column="92" />
+            <state vertical-scroll-proportion="-5.5384617">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -94,17 +93,9 @@
       <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-14.0">
               <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-              <folding>
-                <marker date="1435605594433" expanded="true" signature="17:2568" placeholder="..." />
-                <marker date="1435605594433" expanded="true" signature="26:364" placeholder="..." />
-                <marker date="1435605594433" expanded="true" signature="373:1591" placeholder="..." />
-                <marker date="1435605594433" expanded="true" signature="388:1480" placeholder="..." />
-                <marker date="1435605594433" expanded="true" signature="1492:1591" placeholder="..." />
-                <marker date="1435605594433" expanded="true" signature="1528:1591" placeholder="..." />
-                <marker date="1435605594433" expanded="true" signature="1794:2568" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,13 +103,9 @@
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-1.3846154">
               <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <marker date="1435605594433" expanded="true" signature="20:238" placeholder="..." />
-                <marker date="1435605594433" expanded="true" signature="35:238" placeholder="..." />
-                <marker date="1435605594433" expanded="true" signature="124:238" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="methods.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="methods.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/methods/methods.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.4155251">
+              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -192,7 +179,6 @@
         <option value="$PROJECT_DIR$/middleware/sendHttpError.js" />
         <option value="$PROJECT_DIR$/libs/mongoose.js" />
         <option value="$PROJECT_DIR$/libs/converter.js" />
-        <option value="$PROJECT_DIR$/views/methods/methods.jade" />
         <option value="$PROJECT_DIR$/views/methods/api/getCheckins.jade" />
         <option value="$PROJECT_DIR$/views/methods/api/getVenues.jade" />
         <option value="$PROJECT_DIR$/views/methods/api/getVenuesByString.jade" />
@@ -214,6 +200,7 @@
         <option value="$PROJECT_DIR$/routes/api/venue.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" />
+        <option value="$PROJECT_DIR$/views/methods/methods.jade" />
       </list>
     </option>
   </component>
@@ -514,6 +501,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/methods" />
       <recent name="$PROJECT_DIR$/views/methods/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -575,12 +563,6 @@
       <created>1424083333780</created>
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
-    </task>
-    <task id="LOCAL-00054" summary="schedule">
-      <created>1426258173704</created>
-      <option name="number" value="00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1426258173704</updated>
     </task>
     <task id="LOCAL-00055" summary="ToFixed">
       <created>1426510603113</created>
@@ -870,7 +852,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435607556972</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Added restaurants api">
+      <created>1435607819835</created>
+      <option name="number" value="00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1435607819835</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1239,34 +1227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-          <folding>
-            <marker date="1435605594433" expanded="true" signature="17:2568" placeholder="..." />
-            <marker date="1435605594433" expanded="true" signature="26:364" placeholder="..." />
-            <marker date="1435605594433" expanded="true" signature="373:1591" placeholder="..." />
-            <marker date="1435605594433" expanded="true" signature="388:1480" placeholder="..." />
-            <marker date="1435605594433" expanded="true" signature="1492:1591" placeholder="..." />
-            <marker date="1435605594433" expanded="true" signature="1528:1591" placeholder="..." />
-            <marker date="1435605594433" expanded="true" signature="1794:2568" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1435605594433" expanded="true" signature="20:238" placeholder="..." />
-            <marker date="1435605594433" expanded="true" signature="35:238" placeholder="..." />
-            <marker date="1435605594433" expanded="true" signature="124:238" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/error.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1288,14 +1248,6 @@
             <marker date="1435605594433" expanded="true" signature="719:894" placeholder="..." />
             <marker date="1435605594433" expanded="true" signature="734:894" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/methods/methods.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,18 +1275,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="145" column="50" selection-start-line="145" selection-start-column="50" selection-end-line="145" selection-end-column="50" />
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3846154">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/methods/api/getRestaurants.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5376106">
-          <caret line="27" column="92" selection-start-line="27" selection-start-column="92" selection-end-line="27" selection-end-column="92" />
+        <state vertical-scroll-proportion="-5.5384617">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="141" column="13" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/methods/methods.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4155251">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
           <folding />
         </state>
       </provider>
