@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="Updated restaurants api, added specials flag">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/converter.js" afterPath="$PROJECT_DIR$/libs/converter.js" />
+    <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" afterPath="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api/venue.js" afterPath="$PROJECT_DIR$/routes/api/venue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/mobile.api/venue.js" afterPath="$PROJECT_DIR$/routes/mobile.api/venue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Check-InEveryday.iws" />
@@ -32,27 +29,27 @@
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="149" column="30" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
+              <caret line="63" column="43" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="venue.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="venue.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/mobile.api/venue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
-              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getRestaurants.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getRestaurants.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/methods/api/getRestaurants.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.038462">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.7353464">
+              <caret line="35" column="167" selection-start-line="35" selection-start-column="167" selection-end-line="35" selection-end-column="167" />
               <folding />
             </state>
           </provider>
@@ -175,8 +172,8 @@
         <option value="$PROJECT_DIR$/routes/mobile.api/venue.js" />
         <option value="$PROJECT_DIR$/libs/converter.js" />
         <option value="$PROJECT_DIR$/routes/api/venue.js" />
-        <option value="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" />
       </list>
     </option>
   </component>
@@ -562,12 +559,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00056" summary="unshift for schedule">
-      <created>1426516440635</created>
-      <option name="number" value="00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1426516440635</updated>
-    </task>
     <task id="LOCAL-00057" summary="return accessToken">
       <created>1426520233360</created>
       <option name="number" value="00057" />
@@ -856,7 +847,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435608287051</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Updated restaurants api, added specials flag">
+      <created>1435775484285</created>
+      <option name="number" value="00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1435775484285</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1251,22 +1248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/methods/api/getRestaurants.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.038462">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="149" column="30" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3846154">
@@ -1299,10 +1280,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="43" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/mobile.api/venue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/methods/api/getRestaurants.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7353464">
+          <caret line="35" column="167" selection-start-line="35" selection-start-column="167" selection-end-line="35" selection-end-column="167" />
           <folding />
         </state>
       </provider>
