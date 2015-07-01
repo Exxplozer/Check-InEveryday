@@ -57,7 +57,7 @@
       <file leaf-file-name="venue.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/mobile.api/venue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7096774">
+            <state vertical-scroll-proportion="0.6903226">
               <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding />
             </state>
@@ -355,24 +355,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Check-InEveryday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Check-inEveryday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mobile.api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -577,12 +559,6 @@
       <created>1424083333780</created>
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Update API and UI">
-      <created>1426686019141</created>
-      <option name="number" value="00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1426686019160</updated>
     </task>
     <task id="LOCAL-00071" summary="remove alert">
       <created>1426686258766</created>
@@ -872,7 +848,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435781872310</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Added specials mobile api">
+      <created>1435782061770</created>
+      <option name="number" value="00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1435782061770</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1345,7 +1327,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/mobile.api/venue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7096774">
+        <state vertical-scroll-proportion="0.6903226">
           <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding />
         </state>
