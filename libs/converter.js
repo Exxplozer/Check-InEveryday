@@ -106,10 +106,6 @@ exports.ConvertRestaurants = function (data) {
                 ratingColor: data.groups[0].items[i].venue.ratingColor
             };
 
-            if (!restaurant.previewPhoto) {
-                delete restaurant.previewPhoto;
-            }
-
             restaurants.push(restaurant);
 
     }

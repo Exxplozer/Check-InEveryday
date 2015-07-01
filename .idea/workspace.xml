@@ -77,8 +77,8 @@
       <file leaf-file-name="converter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libs/converter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5833333">
-              <caret line="96" column="24" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.6433333">
+              <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -584,12 +584,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00066" summary="Types.ObjectId">
-      <created>1426601192686</created>
-      <option name="number" value="00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1426601192686</updated>
-    </task>
     <task id="LOCAL-00067" summary="Emm...">
       <created>1426605207424</created>
       <option name="number" value="00067" />
@@ -878,7 +872,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435779039996</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="specials test">
+      <created>1435779308427</created>
+      <option name="number" value="00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1435779308427</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -918,7 +918,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="analytics" />
     <MESSAGE value="loading" />
     <MESSAGE value="Analytics script" />
     <MESSAGE value="loading to methods" />
@@ -943,7 +942,8 @@
     <MESSAGE value="more tests" />
     <MESSAGE value="data.groups[0].items[i].venue.contact test" />
     <MESSAGE value="One more time" />
-    <option name="LAST_COMMIT_MESSAGE" value="One more time" />
+    <MESSAGE value="specials test" />
+    <option name="LAST_COMMIT_MESSAGE" value="specials test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1330,8 +1330,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/converter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5833333">
-          <caret line="96" column="24" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.6433333">
+          <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
           <folding />
         </state>
       </provider>
