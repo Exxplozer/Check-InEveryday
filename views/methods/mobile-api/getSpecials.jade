@@ -1,0 +1,36 @@
+extends ../../layout
+block content
+   div.col-md-8
+      br
+      ul.nav.nav-pills
+         li(role='presentation')
+            a(href='/methods') API methods
+         li.active(role='presentation')
+            a(href='#') getSpecials
+      br
+      .alert.alert-info(role='alert')
+         You https://checkineveryday.herokuapp.com/api
+         strong /mobile-api/venues/ll/token
+      h4 Parameters
+      table.table.table
+         tr
+         tr
+            td token
+            td string
+            td User accsess oauth token
+         tr
+            td ll
+            td string
+            td Coordinates Latitude and Longitude
+      h4 Result
+      p Returns a list of Venues with Specials near the coordinates
+      h4 Sample query
+      div(class="input-group")
+         div(class="input-group-addon") Coordinates:
+         input(text value= ll id="ll" class="form-control ll")
+      br
+      button(type="submin" class="btn btn-success" onclick="location.href='/mobile-api/specials/'+document.getElementById('ll').value+'/"+ token + "'") Get
+   div.col-md-4
+      h3 Choose the coordinates
+      div(style="position: fixed; top:120px" id="map")
+         div(id = "map-canvas" style = "width: 300px; height: 300px;")

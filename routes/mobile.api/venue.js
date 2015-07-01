@@ -35,7 +35,7 @@ exports.getByString = function (req, res, next) {
         });
 };
 
-exports.getRestaurants = function (req, res, next) {
+exports.getSpecials = function (req, res, next) {
     var now = new Date(),
         ll = req.params.ll.split(',');
 
@@ -47,6 +47,6 @@ exports.getRestaurants = function (req, res, next) {
                 return next(error);
             }
 
-            res.json(converter.ConvertRestaurants(data));
+            res.json(converter.ConvertSpecials(data));
         });
 };

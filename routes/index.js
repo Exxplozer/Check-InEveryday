@@ -70,7 +70,7 @@ module.exports = function (app) {
 
     app.get('/mobile-api/venues/:ll/:token', require('./mobile.api/venue').get);
 
-    //app.get('/mobile-api/restaurants/:ll/:token', require('./mobile.api/venue').getRestaurants);
+    app.get('/mobile-api/specials/:ll/:token', require('./mobile.api/venue').getSpecials);
 
     app.get('/mobile-api/schedule/:token', require('./mobile.api/checkin').getSchedule);
 
@@ -173,6 +173,18 @@ module.exports = function (app) {
 
         if (accessToken) {
             res.render("methods/mobile-api/getVenues", {
+                token : accessToken
+            });
+        } else {
+            res.redirect("/");
+        }
+    });
+
+    app.get('/methods/mobile-api/getSpecials', function (req, res) {
+        var accessToken = req.session.token;
+
+        if (accessToken) {
+            res.render("methods/mobile-api/getSpecials", {
                 token : accessToken
             });
         } else {

@@ -105,3 +105,42 @@ exports.ConvertRestaurants = function (data) {
 
     return restaurants;
 };
+
+exports.ConvertSpecials = function (data) {
+    var venues = [],
+        i  = 0;
+
+    for (i; i < data.groups[0].items.length; i++) {
+        var venue = {
+            id :  data.groups[0].items[i].venue.id,
+            name : data.groups[0].items[i].venue.name,
+            location : {
+                lat : data.groups[0].items[i].venue.location.lat,
+                lng : data.groups[0].items[i].venue.location.lng,
+                city : data.groups[0].items[i].venue.location.city,
+                country : data.groups[0].items[i].venue.location.country
+
+            },
+            specials : data.groups[0].items[i].venue.specials,
+            categories : {
+                shortName :  data.groups[0].items[i].venue.categories[0].shortName
+            },
+            previewPhoto : data.groups[0].items[i].venue.photos.groups[0] ? {
+                prefix : data.groups[0].items[i].venue.photos.groups[0].items[0].prefix,
+                suffix : data.groups[0].items[i].venue.photos.groups[0].items[0].suffix,
+                width  : data.groups[0].items[i].venue.photos.groups[0].items[0].width,
+                height : data.groups[0].items[i].venue.photos.groups[0].items[0].height
+            } : null,
+            rating : data.groups[0].items[i].venue.rating,
+            ratingColor : data.groups[0].items[i].venue.ratingColor
+        };
+
+        if (!venue.previewPhoto) {
+            delete venue.previewPhoto;
+        }
+
+        venues.push(venue);
+    }
+
+    return venues;
+};
