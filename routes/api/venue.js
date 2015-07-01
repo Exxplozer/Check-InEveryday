@@ -48,11 +48,6 @@ exports.getRestaurants = function (req, res, next) {
             if (error) {
                 return next(error);
             }
-
-            if (req.params.isSpecials) {
                 res.json(converter.ConvertRestaurants(data));
-            } else {
-                res.json(data);
-            }
         });
 };
