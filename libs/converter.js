@@ -84,20 +84,7 @@ exports.ConvertRestaurants = function (data) {
                 id: data.groups[0].items[i].venue.id,
                 name: data.groups[0].items[i].venue.name,
                 contact : data.groups[0].items[i].venue.contact,
-                location : data.groups[0].items[i].venue.location, /*{
-                    address : data.groups[0].items[i].venue.location.address,
-                    crossStreet : data.groups[0].items[i].venue.location.crossStreet,
-                    distance : data.groups[0].items[i].venue.location.distance,
-                    postalCode : data.groups[0].items[i].venue.location.postalCode,
-                    cc : data.groups[0].items[i].venue.location.cc,
-                    neighborhood : data.groups[0].items[i].venue.location.neighborhood,
-                    state : data.groups[0].items[i].venue.location.state,
-                    formattedAddress : data.groups[0].items[i].venue.location.formattedAddress,
-                    lat: data.groups[0].items[i].venue.location.lat,
-                    lng: data.groups[0].items[i].venue.location.lng,
-                    city: data.groups[0].items[i].venue.location.city,
-                    country: data.groups[0].items[i].venue.location.country
-                },*/
+                location : data.groups[0].items[i].venue.location,
                 categories :  data.groups[0].items[i].venue.categories,
                 verified :  data.groups[0].items[i].venue.verified,
                 url : data.groups[0].items[i].venue.url,
@@ -107,6 +94,7 @@ exports.ConvertRestaurants = function (data) {
                 rating : data.groups[0].items[i].venue.rating,
                 ratingColor : data.groups[0].items[i].venue.ratingColor,
                 ratingSignals : data.groups[0].items[i].venue.ratingSignals,
+                specials : data.groups[0].items[i].venue.specials,
                 hours : data.groups[0].items[i].venue.hours,
                 previewPhoto: data.groups[0].items[i].venue.photos.groups[0] ? {
                     prefix: data.groups[0].items[i].venue.photos.groups[0].items[0].prefix,
