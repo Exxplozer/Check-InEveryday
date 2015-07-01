@@ -74,16 +74,32 @@ exports.ConvertSchedule = function (data) {
     return schedule;
 };
 
-exports.ConvertSpecialslsRestaurants = function (data) {
+exports.ConvertRestaurants = function (data) {
     var restaurants = [],
         i  = 0;
 
     for (i; i < data.groups[0].items.length; i++) {
-        if (data.groups[0].items[i].venue.specials.count > 0) {
+
             var restaurant = {
                 id: data.groups[0].items[i].venue.id,
                 name: data.groups[0].items[i].venue.name,
+                contact: {
+                    phone: data.groups[0].items[i].venue.contact.phone ?
+                       data.groups[0].items[i].venue.contact.phone : null,
+                    formattedPhone: data.groups[0].items[i].venue.contact.formattedPhone ?
+                        data.groups[0].items[i].venue.contact.formattedPhone : null,
+
+
+                },
                 location: {
+                    address : data.groups[0].items[i].venue.location.address,
+                    crossStreet : data.groups[0].items[i].venue.location.crossStreet,
+                    distance : data.groups[0].items[i].venue.location.distance,
+                    postalCode : data.groups[0].items[i].venue.location.postalCode,
+                    cc : data.groups[0].items[i].venue.location.cc,
+                    neighborhood : data.groups[0].items[i].venue.location.neighborhood,
+                    state : data.groups[0].items[i].venue.location.state,
+                    formattedAddress : data.groups[0].items[i].venue.location.formattedAddress,
                     lat: data.groups[0].items[i].venue.location.lat,
                     lng: data.groups[0].items[i].venue.location.lng,
                     city: data.groups[0].items[i].venue.location.city,
@@ -92,6 +108,25 @@ exports.ConvertSpecialslsRestaurants = function (data) {
                 },
                 categories: {
                     shortName: data.groups[0].items[i].venue.categories[0].shortName
+                },
+                verified :  data.groups[0].items[i].venue.verified,
+                url : data.groups[0].items[i].venue.url,
+                price : {
+                    tier : data.groups[0].items[i].venue.price.tier ?
+                        data.groups[0].items[i].venue.price.tier : null,
+                    message : data.groups[0].items[i].venue.price.message ?
+                        data.groups[0].items[i].venue.price.message : null,
+                    currency : data.groups[0].items[i].venue.price.currency ?
+                        data.groups[0].items[i].venue.price.currency : null
+                },
+                hasMenu : data.groups[0].items[i].venue.hasMenu,
+                like : data.groups[0].items[i].venue.like,
+                rating : data.groups[0].items[i].venue.rating,
+                ratingColor : data.groups[0].items[i].venue.ratingColor,
+                ratingSignals : data.groups[0].items[i].venue.ratingSignals,
+                hours : {
+                    status : data.groups[0].items[i].venue.status,
+                    isOpen : data.groups[0].items[i].venue.isOpen,
                 },
                 previewPhoto: data.groups[0].items[i].venue.photos.groups[0] ? {
                     prefix: data.groups[0].items[i].venue.photos.groups[0].items[0].prefix,
@@ -108,7 +143,7 @@ exports.ConvertSpecialslsRestaurants = function (data) {
             }
 
             restaurants.push(restaurant);
-        }
+
     }
 
     return restaurants;

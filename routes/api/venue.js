@@ -50,7 +50,7 @@ exports.getRestaurants = function (req, res, next) {
             }
 
             if (req.params.isSpecials) {
-                res.json(converter.ConvertSpecialslsRestaurants(data));
+                res.json(converter.ConvertRestaurants(data));
             } else {
                 res.json(data);
             }
