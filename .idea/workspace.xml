@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" afterPath="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Check-InEveryday.iws" />
@@ -48,8 +47,8 @@
       <file leaf-file-name="getRestaurants.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/methods/api/getRestaurants.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7353464">
-              <caret line="35" column="167" selection-start-line="35" selection-start-column="167" selection-end-line="35" selection-end-column="167" />
+            <state vertical-scroll-proportion="0.7028862">
+              <caret line="35" column="177" selection-start-line="35" selection-start-column="177" selection-end-line="35" selection-end-column="177" />
               <folding />
             </state>
           </provider>
@@ -559,12 +558,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00057" summary="return accessToken">
-      <created>1426520233360</created>
-      <option name="number" value="00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1426520233360</updated>
-    </task>
     <task id="LOCAL-00058" summary="code">
       <created>1426520367691</created>
       <option name="number" value="00058" />
@@ -853,7 +846,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435775484285</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Updated restaurants jade">
+      <created>1435775809323</created>
+      <option name="number" value="00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1435775809324</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -893,7 +892,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Are you okay and check the token" />
     <MESSAGE value="Are you okay updated" />
     <MESSAGE value="some updates" />
     <MESSAGE value=".b" />
@@ -918,7 +916,8 @@
     <MESSAGE value="script" />
     <MESSAGE value="Added restaurants api" />
     <MESSAGE value="Updated restaurants api, added specials flag" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated restaurants api, added specials flag" />
+    <MESSAGE value="Updated restaurants jade" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated restaurants jade" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1298,8 +1297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/methods/api/getRestaurants.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7353464">
-          <caret line="35" column="167" selection-start-line="35" selection-start-column="167" selection-end-line="35" selection-end-column="167" />
+        <state vertical-scroll-proportion="0.7028862">
+          <caret line="35" column="177" selection-start-line="35" selection-start-column="177" selection-end-line="35" selection-end-column="177" />
           <folding />
         </state>
       </provider>
