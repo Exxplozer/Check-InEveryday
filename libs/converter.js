@@ -83,11 +83,11 @@ exports.ConvertRestaurants = function (data) {
             var restaurant = {
                 id: data.groups[0].items[i].venue.id,
                 name: data.groups[0].items[i].venue.name,
-                contact: {
+                contact : {
                     phone: data.groups[0].items[i].venue.contact.phone ?
                        data.groups[0].items[i].venue.contact.phone : null,
                     formattedPhone: data.groups[0].items[i].venue.contact.formattedPhone ?
-                        data.groups[0].items[i].venue.contact.formattedPhone : null,
+                        data.groups[0].items[i].venue.contact.formattedPhone : null
 
 
                 },
