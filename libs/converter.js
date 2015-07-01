@@ -83,14 +83,14 @@ exports.ConvertRestaurants = function (data) {
             var restaurant = {
                 id: data.groups[0].items[i].venue.id,
                 name: data.groups[0].items[i].venue.name,
-                contact : {
+               /* contact : {
                     phone: data.groups[0].items[i].venue.contact.phone ?
                        data.groups[0].items[i].venue.contact.phone : null,
                     formattedPhone: data.groups[0].items[i].venue.contact.formattedPhone ?
                         data.groups[0].items[i].venue.contact.formattedPhone : null
 
 
-                },
+                },*/
                 location: {
                     address : data.groups[0].items[i].venue.location.address,
                     crossStreet : data.groups[0].items[i].venue.location.crossStreet,
@@ -111,23 +111,23 @@ exports.ConvertRestaurants = function (data) {
                 },
                 verified :  data.groups[0].items[i].venue.verified,
                 url : data.groups[0].items[i].venue.url,
-                price : {
+               /* price : {
                     tier : data.groups[0].items[i].venue.price.tier ?
                         data.groups[0].items[i].venue.price.tier : null,
                     message : data.groups[0].items[i].venue.price.message ?
                         data.groups[0].items[i].venue.price.message : null,
                     currency : data.groups[0].items[i].venue.price.currency ?
                         data.groups[0].items[i].venue.price.currency : null
-                },
+                },*/
                 hasMenu : data.groups[0].items[i].venue.hasMenu,
                 like : data.groups[0].items[i].venue.like,
                 rating : data.groups[0].items[i].venue.rating,
                 ratingColor : data.groups[0].items[i].venue.ratingColor,
                 ratingSignals : data.groups[0].items[i].venue.ratingSignals,
-                hours : {
+              /*  hours : {
                     status : data.groups[0].items[i].venue.status,
                     isOpen : data.groups[0].items[i].venue.isOpen,
-                },
+                },*/
                 previewPhoto: data.groups[0].items[i].venue.photos.groups[0] ? {
                     prefix: data.groups[0].items[i].venue.photos.groups[0].items[0].prefix,
                     suffix: data.groups[0].items[i].venue.photos.groups[0].items[0].suffix,
