@@ -95,13 +95,6 @@ exports.ConvertRestaurants = function (data) {
                 ratingColor : data.groups[0].items[i].venue.ratingColor,
                 ratingSignals : data.groups[0].items[i].venue.ratingSignals,
                 specials : data.groups[0].items[i].venue.specials,
-                hours : data.groups[0].items[i].venue.hours,
-                previewPhoto: data.groups[0].items[i].venue.photos.groups[0] ? {
-                    prefix: data.groups[0].items[i].venue.photos.groups[0].items[0].prefix,
-                    suffix: data.groups[0].items[i].venue.photos.groups[0].items[0].suffix,
-                    width: data.groups[0].items[i].venue.photos.groups[0].items[0].width,
-                    height: data.groups[0].items[i].venue.photos.groups[0].items[0].height
-                } : null,
                 rating: data.groups[0].items[i].venue.rating,
                 ratingColor: data.groups[0].items[i].venue.ratingColor
             };
