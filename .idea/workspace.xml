@@ -47,8 +47,8 @@
       <file leaf-file-name="getRestaurants.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/methods/api/getRestaurants.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7028862">
-              <caret line="35" column="177" selection-start-line="35" selection-start-column="177" selection-end-line="35" selection-end-column="177" />
+            <state vertical-scroll-proportion="0.73136914">
+              <caret line="35" column="178" selection-start-line="35" selection-start-column="178" selection-end-line="35" selection-end-column="178" />
               <folding />
             </state>
           </provider>
@@ -558,12 +558,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00058" summary="code">
-      <created>1426520367691</created>
-      <option name="number" value="00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1426520367692</updated>
-    </task>
     <task id="LOCAL-00059" summary="checkin count">
       <created>1426592752772</created>
       <option name="number" value="00059" />
@@ -852,14 +846,20 @@
       <option name="project" value="LOCAL" />
       <updated>1435775809324</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="One more fix restaurants jade">
+      <created>1435775958700</created>
+      <option name="number" value="00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1435775958700</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="30" width="1922" height="1051" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34169278" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33485714" sideWeight="0.4989339" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -892,7 +892,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Are you okay updated" />
     <MESSAGE value="some updates" />
     <MESSAGE value=".b" />
     <MESSAGE value="b" />
@@ -917,7 +916,8 @@
     <MESSAGE value="Added restaurants api" />
     <MESSAGE value="Updated restaurants api, added specials flag" />
     <MESSAGE value="Updated restaurants jade" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated restaurants jade" />
+    <MESSAGE value="One more fix restaurants jade" />
+    <option name="LAST_COMMIT_MESSAGE" value="One more fix restaurants jade" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1297,8 +1297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/methods/api/getRestaurants.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7028862">
-          <caret line="35" column="177" selection-start-line="35" selection-start-column="177" selection-end-line="35" selection-end-column="177" />
+        <state vertical-scroll-proportion="0.73136914">
+          <caret line="35" column="178" selection-start-line="35" selection-start-column="178" selection-end-line="35" selection-end-column="178" />
           <folding />
         </state>
       </provider>
