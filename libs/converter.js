@@ -91,6 +91,7 @@ exports.ConvertRestaurants = function (data) {
 
 
                 },*/
+                contact : data.groups[0].items[i].venue.contact,
                 location: {
                     address : data.groups[0].items[i].venue.location.address,
                     crossStreet : data.groups[0].items[i].venue.location.crossStreet,
