@@ -83,16 +83,8 @@ exports.ConvertRestaurants = function (data) {
             var restaurant = {
                 id: data.groups[0].items[i].venue.id,
                 name: data.groups[0].items[i].venue.name,
-               /* contact : {
-                    phone: data.groups[0].items[i].venue.contact.phone ?
-                       data.groups[0].items[i].venue.contact.phone : null,
-                    formattedPhone: data.groups[0].items[i].venue.contact.formattedPhone ?
-                        data.groups[0].items[i].venue.contact.formattedPhone : null
-
-
-                },*/
                 contact : data.groups[0].items[i].venue.contact,
-                location: {
+                location : data.groups[0].items[i].venue.location, /*{
                     address : data.groups[0].items[i].venue.location.address,
                     crossStreet : data.groups[0].items[i].venue.location.crossStreet,
                     distance : data.groups[0].items[i].venue.location.distance,
@@ -105,30 +97,17 @@ exports.ConvertRestaurants = function (data) {
                     lng: data.groups[0].items[i].venue.location.lng,
                     city: data.groups[0].items[i].venue.location.city,
                     country: data.groups[0].items[i].venue.location.country
-
-                },
-                categories: {
-                    shortName: data.groups[0].items[i].venue.categories[0].shortName
-                },
+                },*/
+                categories :  data.groups[0].items[i].venue.categories,
                 verified :  data.groups[0].items[i].venue.verified,
                 url : data.groups[0].items[i].venue.url,
-               /* price : {
-                    tier : data.groups[0].items[i].venue.price.tier ?
-                        data.groups[0].items[i].venue.price.tier : null,
-                    message : data.groups[0].items[i].venue.price.message ?
-                        data.groups[0].items[i].venue.price.message : null,
-                    currency : data.groups[0].items[i].venue.price.currency ?
-                        data.groups[0].items[i].venue.price.currency : null
-                },*/
+                price : data.groups[0].items[i].venue.price,
                 hasMenu : data.groups[0].items[i].venue.hasMenu,
                 like : data.groups[0].items[i].venue.like,
                 rating : data.groups[0].items[i].venue.rating,
                 ratingColor : data.groups[0].items[i].venue.ratingColor,
                 ratingSignals : data.groups[0].items[i].venue.ratingSignals,
-              /*  hours : {
-                    status : data.groups[0].items[i].venue.status,
-                    isOpen : data.groups[0].items[i].venue.isOpen,
-                },*/
+                hours : data.groups[0].items[i].venue.hours,
                 previewPhoto: data.groups[0].items[i].venue.photos.groups[0] ? {
                     prefix: data.groups[0].items[i].venue.photos.groups[0].items[0].prefix,
                     suffix: data.groups[0].items[i].venue.photos.groups[0].items[0].suffix,
