@@ -59,7 +59,7 @@ module.exports = function (app) {
 
     app.get('/api/venues/:ll/:token/:query', require('./api/venue').getByString);
 
-    app.get('/api/venues/:ll/:token', require('./api/venue').get);
+    app.get('/api/venues/:ll/:specials/:token', require('./api/venue').get);
 
     app.get('/api/restaurants/:ll/:token', require('./api/venue').getRestaurants);
 
@@ -69,6 +69,8 @@ module.exports = function (app) {
     app.get('/mobile-api/venues/:ll/:token/:query', require('./mobile.api/venue').getByString);
 
     app.get('/mobile-api/venues/:ll/:token', require('./mobile.api/venue').get);
+
+    //app.get('/mobile-api/restaurants/:ll/:token', require('./mobile.api/venue').getRestaurants);
 
     app.get('/mobile-api/schedule/:token', require('./mobile.api/checkin').getSchedule);
 
@@ -144,7 +146,8 @@ module.exports = function (app) {
 
         if (accessToken) {
             res.render("methods/api/getRestaurants", {
-                token : accessToken
+                token : accessToken,
+                specials : '0'
             });
         } else {
             res.redirect("/");

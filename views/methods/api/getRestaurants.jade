@@ -18,9 +18,17 @@ block content
             td ll
             td string
             td Coordinates Latitude and Longitude
+         tr
+            td specials
+            td int (0 or 1)
+            td Boolean flag to only include venues that have a special.
       h4 Result
       p Returns a list of restaurants near the coordinates
       h4 Sample query
+      div(class="input-group")
+         div(class="input-group-addon") Coordinates:
+         input(text value= specials id="ll" class="form-control ll" )
+      br
       div(class="input-group")
          div(class="input-group-addon") Coordinates:
          input(text value= ll id="ll" class="form-control ll" )
