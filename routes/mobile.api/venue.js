@@ -41,6 +41,7 @@ exports.getSpecials = function (req, res, next) {
 
     foursquare.Venues.explore(ll[0], ll[1], null, { categoryId : '4d4b7105d754a06374d81259',
             specials : 1,
+            venuePhotos : 1,
             v : dateFormat(now, "yyyymmdd") },
         req.params.token,
         function (error, data) {
