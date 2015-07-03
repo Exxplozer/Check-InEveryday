@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d71531e7-9336-4916-a858-8f6e664bdf4b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/mobile.api/venue.js" afterPath="$PROJECT_DIR$/routes/mobile.api/venue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/converter.js" afterPath="$PROJECT_DIR$/libs/converter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Check-InEveryday.iws" />
@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="venue.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="venue.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/mobile.api/venue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7096774">
-              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="converter.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="converter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libs/converter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.5354839">
+              <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -188,11 +188,11 @@
         <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/views/methods/api/getRestaurants.jade" />
         <option value="$PROJECT_DIR$/routes/api/venue.js" />
-        <option value="$PROJECT_DIR$/libs/converter.js" />
         <option value="$PROJECT_DIR$/views/methods/mobile-api/getSpecials.jade" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/methods/methods.jade" />
         <option value="$PROJECT_DIR$/routes/mobile.api/venue.js" />
+        <option value="$PROJECT_DIR$/libs/converter.js" />
       </list>
     </option>
   </component>
@@ -560,12 +560,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00072" summary="token : accessToken">
-      <created>1426686698001</created>
-      <option name="number" value="00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1426686698001</updated>
-    </task>
     <task id="LOCAL-00073" summary="put">
       <created>1426687148279</created>
       <option name="number" value="00073" />
@@ -854,7 +848,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435783281154</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="Added venuePhotos into specials">
+      <created>1435865884621</created>
+      <option name="number" value="00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1435865884621</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -915,7 +915,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="loading to methods2" />
     <MESSAGE value="script inside to head" />
     <MESSAGE value="2 script" />
     <MESSAGE value="2 script1" />
@@ -940,7 +939,8 @@
     <MESSAGE value="what if?" />
     <MESSAGE value="deleted preview photo" />
     <MESSAGE value="Added specials mobile api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added specials mobile api" />
+    <MESSAGE value="Added venuePhotos into specials" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added venuePhotos into specials" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1317,18 +1317,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/converter.js">
+    <entry file="file://$PROJECT_DIR$/routes/mobile.api/venue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="26" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/mobile.api/venue.js">
+    <entry file="file://$PROJECT_DIR$/libs/converter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7096774">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.5354839">
+          <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
           <folding />
         </state>
       </provider>

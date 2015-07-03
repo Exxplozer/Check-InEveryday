@@ -121,6 +121,7 @@ exports.ConvertSpecials = function (data) {
                 country : data.groups[0].items[i].venue.location.country
 
             },
+            menu : data.groups[0].items[i].venue.menu,
             specials : data.groups[0].items[i].venue.specials,
             categories : {
                 shortName :  data.groups[0].items[i].venue.categories[0].shortName
