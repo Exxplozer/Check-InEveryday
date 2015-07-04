@@ -95,8 +95,6 @@ exports.ConvertRestaurants = function (data) {
                 ratingColor : data.groups[0].items[i].venue.ratingColor,
                 ratingSignals : data.groups[0].items[i].venue.ratingSignals,
                 specials : data.groups[0].items[i].venue.specials,
-                rating: data.groups[0].items[i].venue.rating,
-                ratingColor: data.groups[0].items[i].venue.ratingColor
             };
 
             restaurants.push(restaurant);

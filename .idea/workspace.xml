@@ -97,8 +97,8 @@
       <file leaf-file-name="converter.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libs/converter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5354839">
-              <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.45806453">
+              <caret line="118" column="72" selection-start-line="118" selection-start-column="72" selection-end-line="118" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -560,12 +560,6 @@
       <option name="number" value="Default" />
       <updated>1424083333780</updated>
     </task>
-    <task id="LOCAL-00073" summary="put">
-      <created>1426687148279</created>
-      <option name="number" value="00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1426687148279</updated>
-    </task>
     <task id="LOCAL-00074" summary="Are you okay and check the token">
       <created>1426768838363</created>
       <option name="number" value="00074" />
@@ -854,7 +848,13 @@
       <option name="project" value="LOCAL" />
       <updated>1435865884621</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Added menu into specials">
+      <created>1435953150352</created>
+      <option name="number" value="00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1435953150353</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -915,7 +915,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="script inside to head" />
     <MESSAGE value="2 script" />
     <MESSAGE value="2 script1" />
     <MESSAGE value="2 script 2" />
@@ -940,7 +939,8 @@
     <MESSAGE value="deleted preview photo" />
     <MESSAGE value="Added specials mobile api" />
     <MESSAGE value="Added venuePhotos into specials" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added venuePhotos into specials" />
+    <MESSAGE value="Added menu into specials" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added menu into specials" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1327,8 +1327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/converter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5354839">
-          <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.45806453">
+          <caret line="118" column="72" selection-start-line="118" selection-start-column="72" selection-end-line="118" selection-end-column="72" />
           <folding />
         </state>
       </provider>
