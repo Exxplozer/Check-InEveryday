@@ -59,7 +59,7 @@ module.exports = function (app) {
 
     app.get('/api/venues/:ll/:token/:query', require('./api/venue').getByString);
 
-    app.get('/api/venues/:ll:token', require('./api/venue').get);
+    app.get('/api/venues/:ll/:token', require('./api/venue').get);
 
     app.get('/api/restaurants/:ll/:specials/:token', require('./api/venue').getRestaurants);
 
